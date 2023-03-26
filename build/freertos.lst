@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s 			page 1
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s 			page 1
   12:Core/Src/driver.c ****   {
   13:Core/Src/driver.c ****     osDelay(1000);
   45              		.loc 2 13 5 discriminator 1 view .LVU3
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s 			page 2
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s 			page 2
 
 
   46 0002 4FF47A70 		mov	r0, #1000
@@ -71,9 +71,9 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s 			page 1
   52 0010 0348     		ldr	r0, .L4
   53 0012 FFF7FEFF 		bl	HAL_GPIO_WritePin
   54              	.LVL3:
-  15:Core/Src/driver.c ****     osDelay(1000);
+  15:Core/Src/driver.c ****     osDelay(2000);
   55              		.loc 2 15 5 discriminator 1 view .LVU5
-  56 0016 4FF47A70 		mov	r0, #1000
+  56 0016 4FF4FA60 		mov	r0, #2000
   57 001a FFF7FEFF 		bl	osDelay
   58              	.LVL4:
   11:Core/Src/driver.c ****   {
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s 			page 1
   22:Core/Src/freertos.c **** #include "task.h"
   23:Core/Src/freertos.c **** #include "main.h"
   24:Core/Src/freertos.c **** #include "cmsis_os.h"
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s 			page 3
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s 			page 3
 
 
   25:Core/Src/freertos.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s 			page 1
   79:Core/Src/freertos.c **** /* USER CODE END GET_IDLE_TASK_MEMORY */
   80:Core/Src/freertos.c **** 
   81:Core/Src/freertos.c **** /**
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s 			page 4
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s 			page 4
 
 
   82:Core/Src/freertos.c ****   * @brief  FreeRTOS initialization
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s 			page 1
   78              		.loc 1 135 1 view -0
   79              		.cfi_startproc
   80              		@ Volatile: function does not return.
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s 			page 5
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s 			page 5
 
 
   81              		@ args = 0, pretend = 0, frame = 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s 			page 1
  125 000a FFF7FEFF 		bl	HAL_GPIO_WritePin
  126              	.LVL9:
   10:Core/Src/comm.c ****     osDelay(2000);
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s 			page 6
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s 			page 6
 
 
  127              		.loc 3 10 5 discriminator 1 view .LVU15
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s 			page 1
  168              		.section	.text.vApplicationGetIdleTaskMemory,"ax",%progbits
  169              		.align	1
  170              		.global	vApplicationGetIdleTaskMemory
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s 			page 7
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s 			page 7
 
 
  171              		.syntax unified
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s 			page 1
  219              	.LCFI4:
  220              		.cfi_def_cfa_offset 12
  221              		.cfi_offset 4, -12
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s 			page 8
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s 			page 8
 
 
  222              		.cfi_offset 5, -8
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s 			page 1
  265              		.loc 1 119 20 is_stmt 0 view .LVU40
  266 0050 2946     		mov	r1, r5
  267 0052 6846     		mov	r0, sp
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s 			page 9
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s 			page 9
 
 
  268 0054 FFF7FEFF 		bl	osThreadCreate
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s 			page 1
  315              		.global	commTaskHandle
  316              		.section	.bss.commTaskHandle,"aw",%nobits
  317              		.align	2
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s 			page 10
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s 			page 10
 
 
  320              	commTaskHandle:
@@ -581,39 +581,39 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s 			page 1
  359              		.file 11 "Middlewares/Third_Party/FreeRTOS/Source/include/queue.h"
  360              		.file 12 "Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h"
  361              		.file 13 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h"
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s 			page 11
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s 			page 11
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 freertos.c
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:21     .text.ExStartDriveTask:00000000 $t
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:27     .text.ExStartDriveTask:00000000 ExStartDriveTask
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:64     .text.ExStartDriveTask:00000020 $d
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:69     .text.StartDriveTask:00000000 $t
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:75     .text.StartDriveTask:00000000 StartDriveTask
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:97     .text.ExStartCommTask:00000000 $t
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:103    .text.ExStartCommTask:00000000 ExStartCommTask
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:136    .text.ExStartCommTask:00000018 $d
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:141    .text.StartCommTask:00000000 $t
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:147    .text.StartCommTask:00000000 StartCommTask
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:169    .text.vApplicationGetIdleTaskMemory:00000000 $t
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:175    .text.vApplicationGetIdleTaskMemory:00000000 vApplicationGetIdleTaskMemory
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:200    .text.vApplicationGetIdleTaskMemory:00000010 $d
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:306    .bss.xIdleTaskTCBBuffer:00000000 xIdleTaskTCBBuffer
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:300    .bss.xIdleStack:00000000 xIdleStack
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:206    .text.MX_FREERTOS_Init:00000000 $t
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:212    .text.MX_FREERTOS_Init:00000000 MX_FREERTOS_Init
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:282    .text.MX_FREERTOS_Init:00000060 $d
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:313    .bss.CommSemaphoreHandle:00000000 CommSemaphoreHandle
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:327    .bss.driveTaskHandle:00000000 driveTaskHandle
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:320    .bss.commTaskHandle:00000000 commTaskHandle
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:290    .rodata.str1.4:00000000 $d
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:297    .bss.xIdleStack:00000000 $d
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:303    .bss.xIdleTaskTCBBuffer:00000000 $d
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:310    .bss.CommSemaphoreHandle:00000000 $d
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:317    .bss.commTaskHandle:00000000 $d
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:324    .bss.driveTaskHandle:00000000 $d
-C:\Users\Bgs\AppData\Local\Temp\ccYOOsax.s:330    .rodata:00000000 $d
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:21     .text.ExStartDriveTask:00000000 $t
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:27     .text.ExStartDriveTask:00000000 ExStartDriveTask
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:64     .text.ExStartDriveTask:00000020 $d
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:69     .text.StartDriveTask:00000000 $t
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:75     .text.StartDriveTask:00000000 StartDriveTask
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:97     .text.ExStartCommTask:00000000 $t
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:103    .text.ExStartCommTask:00000000 ExStartCommTask
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:136    .text.ExStartCommTask:00000018 $d
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:141    .text.StartCommTask:00000000 $t
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:147    .text.StartCommTask:00000000 StartCommTask
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:169    .text.vApplicationGetIdleTaskMemory:00000000 $t
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:175    .text.vApplicationGetIdleTaskMemory:00000000 vApplicationGetIdleTaskMemory
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:200    .text.vApplicationGetIdleTaskMemory:00000010 $d
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:306    .bss.xIdleTaskTCBBuffer:00000000 xIdleTaskTCBBuffer
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:300    .bss.xIdleStack:00000000 xIdleStack
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:206    .text.MX_FREERTOS_Init:00000000 $t
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:212    .text.MX_FREERTOS_Init:00000000 MX_FREERTOS_Init
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:282    .text.MX_FREERTOS_Init:00000060 $d
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:313    .bss.CommSemaphoreHandle:00000000 CommSemaphoreHandle
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:327    .bss.driveTaskHandle:00000000 driveTaskHandle
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:320    .bss.commTaskHandle:00000000 commTaskHandle
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:290    .rodata.str1.4:00000000 $d
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:297    .bss.xIdleStack:00000000 $d
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:303    .bss.xIdleTaskTCBBuffer:00000000 $d
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:310    .bss.CommSemaphoreHandle:00000000 $d
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:317    .bss.commTaskHandle:00000000 $d
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:324    .bss.driveTaskHandle:00000000 $d
+C:\Users\Bgs\AppData\Local\Temp\ccEnGHdv.s:330    .rodata:00000000 $d
 
 UNDEFINED SYMBOLS
 osDelay
