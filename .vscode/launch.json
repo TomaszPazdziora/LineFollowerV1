@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "cwd": "${workspaceFolder}",
+      "executable": "./build/LineFollower_6CU.elf",
+      "name": "Debug with ST-Link",
+      "request": "launch",
+      "type": "cortex-debug",
+      "runToEntryPoint": "main",
+      "showDevDebugOutput": "none",
+      "servertype": "stlink"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/Bgs/Documents/studia/6sem/linefollower/LineFollower_6CU",
+      "program": "c:/Users/Bgs/Documents/studia/6sem/linefollower/LineFollower_6CU/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
