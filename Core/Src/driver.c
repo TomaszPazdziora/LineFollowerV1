@@ -23,14 +23,9 @@ extern void ExStartDriveTask(void const * argument) {
   /* Infinite loop */
   for(;;)
   {
-<<<<<<< HEAD
-    HAL_GPIO_WritePin(LED_CTR_GPIO_Port, LED_CTR_Pin, GPIO_PIN_RESET);
-    osDelay(1);
-=======
     osDelay(300);
     measure();
     osDelay(300);
->>>>>>> pr/2
   }
   /* USER CODE END StartDriveTask */
 }
