@@ -45,7 +45,7 @@ build/freertos.o: Core/Src/freertos.c \
  Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
  Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h \
  Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
- Core/Src/driver.c Core/Src/comm.c
+ Core/Src/driver.c Core/Src/comm.c Core/Inc/usart.h Core/Inc/main.h
 Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 Core/Inc/FreeRTOSConfig.h:
 Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h:
@@ -97,3 +97,5 @@ Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h:
 Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:
 Core/Src/driver.c:
 Core/Src/comm.c:
+Core/Inc/usart.h:
+Core/Inc/main.h:

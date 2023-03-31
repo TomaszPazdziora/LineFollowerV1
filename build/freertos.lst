@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s 			page 1
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -16,29 +16,19 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s 			page 1
   13              		.eabi_attribute 34, 1
   14              		.eabi_attribute 18, 4
   15              		.file	"freertos.c"
-  16              		.section	.rodata.str1.4,"aMS",%progbits,1
-  17              		.align	2
-  18              	.LC0:
-  19 0000 64726976 		.ascii	"driveTask\000"
-  19      65546173 
-  19      6B00
-  20 000a 0000     		.align	2
-  21              	.LC2:
-  22 000c 636F6D6D 		.ascii	"commTask\000"
-  22      5461736B 
-  22      00
-  23              		.text
-  24              	.Ltext0:
-  25              		.cfi_sections	.debug_frame
-  26              		.section	.text.ExStartDriveTask,"ax",%progbits
-  27              		.align	1
-  28              		.global	ExStartDriveTask
-  29              		.syntax unified
-  30              		.thumb
-  31              		.thumb_func
-  33              	ExStartDriveTask:
-  34              	.LFB221:
-  35              		.file 1 "Core/Src/driver.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/Src/freertos.c"
+  20              		.section	.text.ExStartDriveTask,"ax",%progbits
+  21              		.align	1
+  22              		.global	ExStartDriveTask
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	ExStartDriveTask:
+  28              	.LFB221:
+  29              		.file 2 "Core/Src/driver.c"
    1:Core/Src/driver.c **** #include "FreeRTOS.h"
    2:Core/Src/driver.c **** #include "task.h"
    3:Core/Src/driver.c **** #include "main.h"
@@ -47,64 +37,58 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s 			page 1
    6:Core/Src/driver.c **** 
    7:Core/Src/driver.c **** extern void ExStartDriveTask(void const * argument)
    8:Core/Src/driver.c **** {
-  36              		.loc 1 8 1 view -0
-  37              		.cfi_startproc
-  38              		@ args = 0, pretend = 0, frame = 0
-  39              		@ frame_needed = 0, uses_anonymous_args = 0
-  40              	.LVL0:
-  41              		.loc 1 8 1 is_stmt 0 view .LVU1
-  42 0000 08B5     		push	{r3, lr}
-  43              	.LCFI0:
-  44              		.cfi_def_cfa_offset 8
-  45              		.cfi_offset 3, -8
-  46              		.cfi_offset 14, -4
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s 			page 2
-
-
-  47              	.LVL1:
-  48              	.L2:
+  30              		.loc 2 8 1 view -0
+  31              		.cfi_startproc
+  32              		@ args = 0, pretend = 0, frame = 0
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34              	.LVL0:
+  35              		.loc 2 8 1 is_stmt 0 view .LVU1
+  36 0000 08B5     		push	{r3, lr}
+  37              	.LCFI0:
+  38              		.cfi_def_cfa_offset 8
+  39              		.cfi_offset 3, -8
+  40              		.cfi_offset 14, -4
+  41              	.LVL1:
+  42              	.L2:
    9:Core/Src/driver.c ****   /* USER CODE BEGIN StartDriveTask */
   10:Core/Src/driver.c ****   int a = 5;
   11:Core/Src/driver.c ****   /* Infinite loop */
   12:Core/Src/driver.c ****   for(;;)
-  49              		.loc 1 12 3 is_stmt 1 discriminator 1 view .LVU2
+  43              		.loc 2 12 3 is_stmt 1 discriminator 1 view .LVU2
   13:Core/Src/driver.c ****   {
-  14:Core/Src/driver.c ****     osDelay(2000);
-  50              		.loc 1 14 5 discriminator 1 view .LVU3
-  51 0002 4FF4FA60 		mov	r0, #2000
-  52 0006 FFF7FEFF 		bl	osDelay
-  53              	.LVL2:
-  15:Core/Src/driver.c ****     HAL_GPIO_WritePin(LED_CTR_GPIO_Port, LED_CTR_Pin, GPIO_PIN_RESET);
-  54              		.loc 1 15 5 discriminator 1 view .LVU4
-  55 000a 0022     		movs	r2, #0
-  56 000c 4FF40051 		mov	r1, #8192
-  57 0010 0348     		ldr	r0, .L4
-  58 0012 FFF7FEFF 		bl	HAL_GPIO_WritePin
-  59              	.LVL3:
-  16:Core/Src/driver.c ****     osDelay(2000);
-  60              		.loc 1 16 5 discriminator 1 view .LVU5
-  61 0016 4FF4FA60 		mov	r0, #2000
-  62 001a FFF7FEFF 		bl	osDelay
-  63              	.LVL4:
+  14:Core/Src/driver.c ****     HAL_GPIO_WritePin(LED_CTR_GPIO_Port, LED_CTR_Pin, GPIO_PIN_RESET);
+  44              		.loc 2 14 5 discriminator 1 view .LVU3
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s 			page 2
+
+
+  45 0002 0022     		movs	r2, #0
+  46 0004 4FF40051 		mov	r1, #8192
+  47 0008 0348     		ldr	r0, .L4
+  48 000a FFF7FEFF 		bl	HAL_GPIO_WritePin
+  49              	.LVL2:
+  15:Core/Src/driver.c ****     osDelay(1);
+  50              		.loc 2 15 5 discriminator 1 view .LVU4
+  51 000e 0120     		movs	r0, #1
+  52 0010 FFF7FEFF 		bl	osDelay
+  53              	.LVL3:
   12:Core/Src/driver.c ****   {
-  64              		.loc 1 12 8 discriminator 1 view .LVU6
-  65 001e F0E7     		b	.L2
-  66              	.L5:
-  67              		.align	2
-  68              	.L4:
-  69 0020 00080240 		.word	1073874944
-  70              		.cfi_endproc
-  71              	.LFE221:
-  73              		.section	.text.StartDriveTask,"ax",%progbits
-  74              		.align	1
-  75              		.global	StartDriveTask
-  76              		.syntax unified
-  77              		.thumb
-  78              		.thumb_func
-  80              	StartDriveTask:
-  81              	.LVL5:
-  82              	.LFB225:
-  83              		.file 2 "Core/Src/freertos.c"
+  54              		.loc 2 12 3 discriminator 1 view .LVU5
+  55 0014 F5E7     		b	.L2
+  56              	.L5:
+  57 0016 00BF     		.align	2
+  58              	.L4:
+  59 0018 00080240 		.word	1073874944
+  60              		.cfi_endproc
+  61              	.LFE221:
+  63              		.section	.text.StartDriveTask,"ax",%progbits
+  64              		.align	1
+  65              		.global	StartDriveTask
+  66              		.syntax unified
+  67              		.thumb
+  68              		.thumb_func
+  70              	StartDriveTask:
+  71              	.LVL4:
+  72              	.LFB226:
    1:Core/Src/freertos.c **** /* USER CODE BEGIN Header */
    2:Core/Src/freertos.c **** /**
    3:Core/Src/freertos.c ****   ******************************************************************************
@@ -118,9 +102,6 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s 			page 1
   11:Core/Src/freertos.c ****   *
   12:Core/Src/freertos.c ****   * This software is licensed under terms that can be found in the LICENSE file
   13:Core/Src/freertos.c ****   * in the root directory of this software component.
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s 			page 3
-
-
   14:Core/Src/freertos.c ****   * If no LICENSE file comes with this software, it is provided AS-IS.
   15:Core/Src/freertos.c ****   *
   16:Core/Src/freertos.c ****   ******************************************************************************
@@ -137,6 +118,9 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s 			page 1
   27:Core/Src/freertos.c **** /* USER CODE BEGIN Includes */
   28:Core/Src/freertos.c **** #include "driver.c"
   29:Core/Src/freertos.c **** #include "comm.c"
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s 			page 3
+
+
   30:Core/Src/freertos.c **** /* USER CODE END Includes */
   31:Core/Src/freertos.c **** 
   32:Core/Src/freertos.c **** /* Private typedef -----------------------------------------------------------*/
@@ -178,9 +162,6 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s 			page 1
   68:Core/Src/freertos.c **** /* USER CODE BEGIN GET_IDLE_TASK_MEMORY */
   69:Core/Src/freertos.c **** static StaticTask_t xIdleTaskTCBBuffer;
   70:Core/Src/freertos.c **** static StackType_t xIdleStack[configMINIMAL_STACK_SIZE];
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s 			page 4
-
-
   71:Core/Src/freertos.c **** 
   72:Core/Src/freertos.c **** void vApplicationGetIdleTaskMemory( StaticTask_t **ppxIdleTaskTCBBuffer, StackType_t **ppxIdleTaskS
   73:Core/Src/freertos.c **** {
@@ -197,6 +178,9 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s 			page 1
   84:Core/Src/freertos.c ****   * @retval None
   85:Core/Src/freertos.c ****   */
   86:Core/Src/freertos.c **** void MX_FREERTOS_Init(void) {
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s 			page 4
+
+
   87:Core/Src/freertos.c ****   /* USER CODE BEGIN Init */
   88:Core/Src/freertos.c **** 
   89:Core/Src/freertos.c ****   /* USER CODE END Init */
@@ -238,9 +222,6 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s 			page 1
  125:Core/Src/freertos.c **** }
  126:Core/Src/freertos.c **** 
  127:Core/Src/freertos.c **** /* USER CODE BEGIN Header_StartDriveTask */
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s 			page 5
-
-
  128:Core/Src/freertos.c **** /**
  129:Core/Src/freertos.c ****   * @brief  Function implementing the driveTask thread.
  130:Core/Src/freertos.c ****   * @param  argument: Not used
@@ -249,91 +230,121 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s 			page 1
  133:Core/Src/freertos.c **** /* USER CODE END Header_StartDriveTask */
  134:Core/Src/freertos.c **** void StartDriveTask(void const * argument)
  135:Core/Src/freertos.c **** {
-  84              		.loc 2 135 1 view -0
-  85              		.cfi_startproc
-  86              		@ Volatile: function does not return.
-  87              		@ args = 0, pretend = 0, frame = 0
-  88              		@ frame_needed = 0, uses_anonymous_args = 0
-  89              		.loc 2 135 1 is_stmt 0 view .LVU8
-  90 0000 08B5     		push	{r3, lr}
-  91              	.LCFI1:
-  92              		.cfi_def_cfa_offset 8
-  93              		.cfi_offset 3, -8
-  94              		.cfi_offset 14, -4
+  73              		.loc 1 135 1 view -0
+  74              		.cfi_startproc
+  75              		@ Volatile: function does not return.
+  76              		@ args = 0, pretend = 0, frame = 0
+  77              		@ frame_needed = 0, uses_anonymous_args = 0
+  78              		.loc 1 135 1 is_stmt 0 view .LVU7
+  79 0000 08B5     		push	{r3, lr}
+  80              	.LCFI1:
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s 			page 5
+
+
+  81              		.cfi_def_cfa_offset 8
+  82              		.cfi_offset 3, -8
+  83              		.cfi_offset 14, -4
  136:Core/Src/freertos.c ****   /* USER CODE BEGIN StartDriveTask */
  137:Core/Src/freertos.c ****   /* Infinite loop */
  138:Core/Src/freertos.c ****   ExStartDriveTask(argument);
-  95              		.loc 2 138 3 is_stmt 1 view .LVU9
-  96 0002 FFF7FEFF 		bl	ExStartDriveTask
-  97              	.LVL6:
-  98              		.loc 2 138 3 is_stmt 0 view .LVU10
-  99              		.cfi_endproc
- 100              	.LFE225:
- 102              		.section	.text.ExStartCommTask,"ax",%progbits
- 103              		.align	1
- 104              		.global	ExStartCommTask
- 105              		.syntax unified
- 106              		.thumb
- 107              		.thumb_func
- 109              	ExStartCommTask:
- 110              	.LFB222:
- 111              		.file 3 "Core/Src/comm.c"
+  84              		.loc 1 138 3 is_stmt 1 view .LVU8
+  85 0002 FFF7FEFF 		bl	ExStartDriveTask
+  86              	.LVL5:
+  87              		.loc 1 138 3 is_stmt 0 view .LVU9
+  88              		.cfi_endproc
+  89              	.LFE226:
+  91              		.section	.text.ExStartCommTask,"ax",%progbits
+  92              		.align	1
+  93              		.global	ExStartCommTask
+  94              		.syntax unified
+  95              		.thumb
+  96              		.thumb_func
+  98              	ExStartCommTask:
+  99              	.LFB222:
+ 100              		.file 3 "Core/Src/comm.c"
    1:Core/Src/comm.c **** #include "FreeRTOS.h"
    2:Core/Src/comm.c **** #include "task.h"
    3:Core/Src/comm.c **** #include "main.h"
    4:Core/Src/comm.c **** #include "cmsis_os.h"
-   5:Core/Src/comm.c **** 
-   6:Core/Src/comm.c **** 
-   7:Core/Src/comm.c **** extern void ExStartCommTask(void const * argument){
- 112              		.loc 3 7 51 is_stmt 1 view -0
- 113              		.cfi_startproc
- 114              		@ Volatile: function does not return.
- 115              		@ args = 0, pretend = 0, frame = 0
- 116              		@ frame_needed = 0, uses_anonymous_args = 0
- 117              	.LVL7:
- 118              		.loc 3 7 51 is_stmt 0 view .LVU12
- 119 0000 08B5     		push	{r3, lr}
- 120              	.LCFI2:
- 121              		.cfi_def_cfa_offset 8
- 122              		.cfi_offset 3, -8
- 123              		.cfi_offset 14, -4
- 124              	.LVL8:
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s 			page 6
+   5:Core/Src/comm.c **** #include "usart.h"
+   6:Core/Src/comm.c **** #include <string.h>
+   7:Core/Src/comm.c **** 
+   8:Core/Src/comm.c **** 
+   9:Core/Src/comm.c ****   extern UART_HandleTypeDef huart6;
+  10:Core/Src/comm.c ****   char* data = "test";
+  11:Core/Src/comm.c ****   void ExStartCommTask(void const * argument){
+ 101              		.loc 3 11 46 is_stmt 1 view -0
+ 102              		.cfi_startproc
+ 103              		@ Volatile: function does not return.
+ 104              		@ args = 0, pretend = 0, frame = 8
+ 105              		@ frame_needed = 0, uses_anonymous_args = 0
+ 106              	.LVL6:
+ 107              		.loc 3 11 46 is_stmt 0 view .LVU11
+ 108 0000 00B5     		push	{lr}
+ 109              	.LCFI2:
+ 110              		.cfi_def_cfa_offset 4
+ 111              		.cfi_offset 14, -4
+ 112 0002 83B0     		sub	sp, sp, #12
+ 113              	.LCFI3:
+ 114              		.cfi_def_cfa_offset 16
+ 115              	.LVL7:
+ 116              	.L9:
+  12:Core/Src/comm.c ****   uint8_t buffer[8];
+ 117              		.loc 3 12 3 is_stmt 1 discriminator 1 view .LVU12
+  13:Core/Src/comm.c ****   for(;;){
+ 118              		.loc 3 13 3 discriminator 1 view .LVU13
+  14:Core/Src/comm.c ****     
+  15:Core/Src/comm.c ****     HAL_UART_Transmit(&huart6, (uint8_t*) data, strlen(data), 250);
+ 119              		.loc 3 15 5 discriminator 1 view .LVU14
+ 120 0004 0A4B     		ldr	r3, .L11
+ 121 0006 1D68     		ldr	r5, [r3]
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s 			page 6
 
 
- 125              	.L9:
-   8:Core/Src/comm.c ****   for(;;){
- 126              		.loc 3 8 3 is_stmt 1 discriminator 1 view .LVU13
-   9:Core/Src/comm.c ****     HAL_GPIO_WritePin(LED_CTR_GPIO_Port, LED_CTR_Pin, GPIO_PIN_SET);
- 127              		.loc 3 9 5 discriminator 1 view .LVU14
- 128 0002 0122     		movs	r2, #1
- 129 0004 4FF40051 		mov	r1, #8192
- 130 0008 0348     		ldr	r0, .L11
- 131 000a FFF7FEFF 		bl	HAL_GPIO_WritePin
- 132              	.LVL9:
-  10:Core/Src/comm.c ****     osDelay(2000);
- 133              		.loc 3 10 5 discriminator 1 view .LVU15
- 134 000e 4FF4FA60 		mov	r0, #2000
- 135 0012 FFF7FEFF 		bl	osDelay
- 136              	.LVL10:
-   8:Core/Src/comm.c ****   for(;;){
- 137              		.loc 3 8 8 discriminator 1 view .LVU16
- 138 0016 F4E7     		b	.L9
- 139              	.L12:
- 140              		.align	2
- 141              	.L11:
- 142 0018 00080240 		.word	1073874944
- 143              		.cfi_endproc
- 144              	.LFE222:
- 146              		.section	.text.StartCommTask,"ax",%progbits
- 147              		.align	1
- 148              		.global	StartCommTask
- 149              		.syntax unified
- 150              		.thumb
- 151              		.thumb_func
- 153              	StartCommTask:
- 154              	.LVL11:
- 155              	.LFB226:
+ 122              		.loc 3 15 49 is_stmt 0 discriminator 1 view .LVU15
+ 123 0008 2846     		mov	r0, r5
+ 124 000a FFF7FEFF 		bl	strlen
+ 125              	.LVL8:
+ 126              		.loc 3 15 5 discriminator 1 view .LVU16
+ 127 000e 094C     		ldr	r4, .L11+4
+ 128 0010 FA23     		movs	r3, #250
+ 129 0012 82B2     		uxth	r2, r0
+ 130 0014 2946     		mov	r1, r5
+ 131 0016 2046     		mov	r0, r4
+ 132 0018 FFF7FEFF 		bl	HAL_UART_Transmit
+ 133              	.LVL9:
+  16:Core/Src/comm.c ****     HAL_UART_Receive(&huart6,buffer, sizeof(buffer),100);
+ 134              		.loc 3 16 5 is_stmt 1 discriminator 1 view .LVU17
+ 135 001c 6423     		movs	r3, #100
+ 136 001e 0822     		movs	r2, #8
+ 137 0020 6946     		mov	r1, sp
+ 138 0022 2046     		mov	r0, r4
+ 139 0024 FFF7FEFF 		bl	HAL_UART_Receive
+ 140              	.LVL10:
+  17:Core/Src/comm.c ****     osDelay(1);
+ 141              		.loc 3 17 5 discriminator 1 view .LVU18
+ 142 0028 0120     		movs	r0, #1
+ 143 002a FFF7FEFF 		bl	osDelay
+ 144              	.LVL11:
+  13:Core/Src/comm.c ****     
+ 145              		.loc 3 13 3 discriminator 1 view .LVU19
+ 146 002e E9E7     		b	.L9
+ 147              	.L12:
+ 148              		.align	2
+ 149              	.L11:
+ 150 0030 00000000 		.word	data
+ 151 0034 00000000 		.word	huart6
+ 152              		.cfi_endproc
+ 153              	.LFE222:
+ 155              		.section	.text.StartCommTask,"ax",%progbits
+ 156              		.align	1
+ 157              		.global	StartCommTask
+ 158              		.syntax unified
+ 159              		.thumb
+ 160              		.thumb_func
+ 162              	StartCommTask:
+ 163              	.LVL12:
+ 164              	.LFB227:
  139:Core/Src/freertos.c ****   /* USER CODE END StartDriveTask */
  140:Core/Src/freertos.c **** }
  141:Core/Src/freertos.c **** 
@@ -346,282 +357,372 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s 			page 1
  148:Core/Src/freertos.c **** /* USER CODE END Header_StartCommTask */
  149:Core/Src/freertos.c **** void StartCommTask(void const * argument)
  150:Core/Src/freertos.c **** {
- 156              		.loc 2 150 1 view -0
- 157              		.cfi_startproc
- 158              		@ Volatile: function does not return.
- 159              		@ args = 0, pretend = 0, frame = 0
- 160              		@ frame_needed = 0, uses_anonymous_args = 0
- 161              		.loc 2 150 1 is_stmt 0 view .LVU18
- 162 0000 08B5     		push	{r3, lr}
- 163              	.LCFI3:
- 164              		.cfi_def_cfa_offset 8
- 165              		.cfi_offset 3, -8
- 166              		.cfi_offset 14, -4
+ 165              		.loc 1 150 1 view -0
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s 			page 7
+
+
+ 166              		.cfi_startproc
+ 167              		@ Volatile: function does not return.
+ 168              		@ args = 0, pretend = 0, frame = 0
+ 169              		@ frame_needed = 0, uses_anonymous_args = 0
+ 170              		.loc 1 150 1 is_stmt 0 view .LVU21
+ 171 0000 08B5     		push	{r3, lr}
+ 172              	.LCFI4:
+ 173              		.cfi_def_cfa_offset 8
+ 174              		.cfi_offset 3, -8
+ 175              		.cfi_offset 14, -4
  151:Core/Src/freertos.c ****   /* USER CODE BEGIN StartCommTask */
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s 			page 7
-
-
  152:Core/Src/freertos.c ****   /* Infinite loop */
  153:Core/Src/freertos.c ****   ExStartCommTask(argument);
- 167              		.loc 2 153 3 is_stmt 1 view .LVU19
- 168 0002 FFF7FEFF 		bl	ExStartCommTask
- 169              	.LVL12:
- 170              		.loc 2 153 3 is_stmt 0 view .LVU20
- 171              		.cfi_endproc
- 172              	.LFE226:
- 174              		.section	.text.vApplicationGetIdleTaskMemory,"ax",%progbits
- 175              		.align	1
- 176              		.global	vApplicationGetIdleTaskMemory
- 177              		.syntax unified
- 178              		.thumb
- 179              		.thumb_func
- 181              	vApplicationGetIdleTaskMemory:
- 182              	.LVL13:
- 183              	.LFB223:
+ 176              		.loc 1 153 3 is_stmt 1 view .LVU22
+ 177 0002 FFF7FEFF 		bl	ExStartCommTask
+ 178              	.LVL13:
+ 179              		.loc 1 153 3 is_stmt 0 view .LVU23
+ 180              		.cfi_endproc
+ 181              	.LFE227:
+ 183              		.section	.text.sendMess,"ax",%progbits
+ 184              		.align	1
+ 185              		.global	sendMess
+ 186              		.syntax unified
+ 187              		.thumb
+ 188              		.thumb_func
+ 190              	sendMess:
+ 191              	.LVL14:
+ 192              	.LFB223:
+  18:Core/Src/comm.c ****   }
+  19:Core/Src/comm.c **** 
+  20:Core/Src/comm.c **** 
+  21:Core/Src/comm.c **** }
+  22:Core/Src/comm.c **** 
+  23:Core/Src/comm.c **** void sendMess(uint8_t mode, uint8_t mess[8]){
+ 193              		.loc 3 23 45 is_stmt 1 view -0
+ 194              		.cfi_startproc
+ 195              		@ args = 0, pretend = 0, frame = 0
+ 196              		@ frame_needed = 0, uses_anonymous_args = 0
+ 197              		.loc 3 23 45 is_stmt 0 view .LVU25
+ 198 0000 10B5     		push	{r4, lr}
+ 199              	.LCFI5:
+ 200              		.cfi_def_cfa_offset 8
+ 201              		.cfi_offset 4, -8
+ 202              		.cfi_offset 14, -4
+  24:Core/Src/comm.c **** 
+  25:Core/Src/comm.c ****   HAL_UART_Transmit(&huart6, (uint8_t*) data, strlen(data), 250);
+ 203              		.loc 3 25 3 is_stmt 1 view .LVU26
+ 204 0002 064B     		ldr	r3, .L17
+ 205 0004 1C68     		ldr	r4, [r3]
+ 206              		.loc 3 25 47 is_stmt 0 view .LVU27
+ 207 0006 2046     		mov	r0, r4
+ 208              	.LVL15:
+ 209              		.loc 3 25 47 view .LVU28
+ 210 0008 FFF7FEFF 		bl	strlen
+ 211              	.LVL16:
+ 212              		.loc 3 25 3 view .LVU29
+ 213 000c FA23     		movs	r3, #250
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s 			page 8
+
+
+ 214 000e 82B2     		uxth	r2, r0
+ 215 0010 2146     		mov	r1, r4
+ 216 0012 0348     		ldr	r0, .L17+4
+ 217 0014 FFF7FEFF 		bl	HAL_UART_Transmit
+ 218              	.LVL17:
+  26:Core/Src/comm.c **** }...
+ 219              		.loc 3 26 1 view .LVU30
+ 220 0018 10BD     		pop	{r4, pc}
+ 221              	.L18:
+ 222 001a 00BF     		.align	2
+ 223              	.L17:
+ 224 001c 00000000 		.word	data
+ 225 0020 00000000 		.word	huart6
+ 226              		.cfi_endproc
+ 227              	.LFE223:
+ 229              		.section	.text.vApplicationGetIdleTaskMemory,"ax",%progbits
+ 230              		.align	1
+ 231              		.global	vApplicationGetIdleTaskMemory
+ 232              		.syntax unified
+ 233              		.thumb
+ 234              		.thumb_func
+ 236              	vApplicationGetIdleTaskMemory:
+ 237              	.LVL18:
+ 238              	.LFB224:
   73:Core/Src/freertos.c ****   *ppxIdleTaskTCBBuffer = &xIdleTaskTCBBuffer;
- 184              		.loc 2 73 1 is_stmt 1 view -0
- 185              		.cfi_startproc
- 186              		@ args = 0, pretend = 0, frame = 0
- 187              		@ frame_needed = 0, uses_anonymous_args = 0
- 188              		@ link register save eliminated.
+ 239              		.loc 1 73 1 is_stmt 1 view -0
+ 240              		.cfi_startproc
+ 241              		@ args = 0, pretend = 0, frame = 0
+ 242              		@ frame_needed = 0, uses_anonymous_args = 0
+ 243              		@ link register save eliminated.
   74:Core/Src/freertos.c ****   *ppxIdleTaskStackBuffer = &xIdleStack[0];
- 189              		.loc 2 74 3 view .LVU22
+ 244              		.loc 1 74 3 view .LVU32
   74:Core/Src/freertos.c ****   *ppxIdleTaskStackBuffer = &xIdleStack[0];
- 190              		.loc 2 74 25 is_stmt 0 view .LVU23
- 191 0000 034B     		ldr	r3, .L16
- 192 0002 0360     		str	r3, [r0]
+ 245              		.loc 1 74 25 is_stmt 0 view .LVU33
+ 246 0000 034B     		ldr	r3, .L20
+ 247 0002 0360     		str	r3, [r0]
   75:Core/Src/freertos.c ****   *pulIdleTaskStackSize = configMINIMAL_STACK_SIZE;
- 193              		.loc 2 75 3 is_stmt 1 view .LVU24
+ 248              		.loc 1 75 3 is_stmt 1 view .LVU34
   75:Core/Src/freertos.c ****   *pulIdleTaskStackSize = configMINIMAL_STACK_SIZE;
- 194              		.loc 2 75 27 is_stmt 0 view .LVU25
- 195 0004 034B     		ldr	r3, .L16+4
- 196 0006 0B60     		str	r3, [r1]
+ 249              		.loc 1 75 27 is_stmt 0 view .LVU35
+ 250 0004 034B     		ldr	r3, .L20+4
+ 251 0006 0B60     		str	r3, [r1]
   76:Core/Src/freertos.c ****   /* place for user code */
- 197              		.loc 2 76 3 is_stmt 1 view .LVU26
+ 252              		.loc 1 76 3 is_stmt 1 view .LVU36
   76:Core/Src/freertos.c ****   /* place for user code */
- 198              		.loc 2 76 25 is_stmt 0 view .LVU27
- 199 0008 8023     		movs	r3, #128
- 200 000a 1360     		str	r3, [r2]
+ 253              		.loc 1 76 25 is_stmt 0 view .LVU37
+ 254 0008 8023     		movs	r3, #128
+ 255 000a 1360     		str	r3, [r2]
   78:Core/Src/freertos.c **** /* USER CODE END GET_IDLE_TASK_MEMORY */
- 201              		.loc 2 78 1 view .LVU28
- 202 000c 7047     		bx	lr
- 203              	.L17:
- 204 000e 00BF     		.align	2
- 205              	.L16:
- 206 0010 00000000 		.word	.LANCHOR0
- 207 0014 00000000 		.word	.LANCHOR1
- 208              		.cfi_endproc
- 209              	.LFE223:
- 211              		.section	.text.MX_FREERTOS_Init,"ax",%progbits
- 212              		.align	1
- 213              		.global	MX_FREERTOS_Init
- 214              		.syntax unified
- 215              		.thumb
- 216              		.thumb_func
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s 			page 8
+ 256              		.loc 1 78 1 view .LVU38
+ 257 000c 7047     		bx	lr
+ 258              	.L21:
+ 259 000e 00BF     		.align	2
+ 260              	.L20:
+ 261 0010 00000000 		.word	xIdleTaskTCBBuffer
+ 262 0014 00000000 		.word	xIdleStack
+ 263              		.cfi_endproc
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s 			page 9
 
 
- 218              	MX_FREERTOS_Init:
- 219              	.LFB224:
+ 264              	.LFE224:
+ 266              		.section	.text.MX_FREERTOS_Init,"ax",%progbits
+ 267              		.align	1
+ 268              		.global	MX_FREERTOS_Init
+ 269              		.syntax unified
+ 270              		.thumb
+ 271              		.thumb_func
+ 273              	MX_FREERTOS_Init:
+ 274              	.LFB225:
   86:Core/Src/freertos.c ****   /* USER CODE BEGIN Init */
- 220              		.loc 2 86 29 is_stmt 1 view -0
- 221              		.cfi_startproc
- 222              		@ args = 0, pretend = 0, frame = 64
- 223              		@ frame_needed = 0, uses_anonymous_args = 0
- 224 0000 30B5     		push	{r4, r5, lr}
- 225              	.LCFI4:
- 226              		.cfi_def_cfa_offset 12
- 227              		.cfi_offset 4, -12
- 228              		.cfi_offset 5, -8
- 229              		.cfi_offset 14, -4
- 230 0002 91B0     		sub	sp, sp, #68
- 231              	.LCFI5:
- 232              		.cfi_def_cfa_offset 80
+ 275              		.loc 1 86 29 is_stmt 1 view -0
+ 276              		.cfi_startproc
+ 277              		@ args = 0, pretend = 0, frame = 64
+ 278              		@ frame_needed = 0, uses_anonymous_args = 0
+ 279 0000 30B5     		push	{r4, r5, lr}
+ 280              	.LCFI6:
+ 281              		.cfi_def_cfa_offset 12
+ 282              		.cfi_offset 4, -12
+ 283              		.cfi_offset 5, -8
+ 284              		.cfi_offset 14, -4
+ 285 0002 91B0     		sub	sp, sp, #68
+ 286              	.LCFI7:
+ 287              		.cfi_def_cfa_offset 80
   97:Core/Src/freertos.c ****   CommSemaphoreHandle = osSemaphoreCreate(osSemaphore(CommSemaphore), 1);
- 233              		.loc 2 97 3 view .LVU30
- 234 0004 0025     		movs	r5, #0
- 235 0006 0E95     		str	r5, [sp, #56]
- 236 0008 0F95     		str	r5, [sp, #60]
+ 288              		.loc 1 97 3 view .LVU40
+ 289 0004 0025     		movs	r5, #0
+ 290 0006 0E95     		str	r5, [sp, #56]
+ 291 0008 0F95     		str	r5, [sp, #60]
   98:Core/Src/freertos.c **** 
- 237              		.loc 2 98 3 view .LVU31
+ 292              		.loc 1 98 3 view .LVU41
   98:Core/Src/freertos.c **** 
- 238              		.loc 2 98 25 is_stmt 0 view .LVU32
- 239 000a 0121     		movs	r1, #1
- 240 000c 0EA8     		add	r0, sp, #56
- 241 000e FFF7FEFF 		bl	osSemaphoreCreate
- 242              	.LVL14:
+ 293              		.loc 1 98 25 is_stmt 0 view .LVU42
+ 294 000a 0121     		movs	r1, #1
+ 295 000c 0EA8     		add	r0, sp, #56
+ 296 000e FFF7FEFF 		bl	osSemaphoreCreate
+ 297              	.LVL19:
   98:Core/Src/freertos.c **** 
- 243              		.loc 2 98 23 view .LVU33
- 244 0012 134B     		ldr	r3, .L20
- 245 0014 1860     		str	r0, [r3]
+ 298              		.loc 1 98 23 view .LVU43
+ 299 0012 134B     		ldr	r3, .L24
+ 300 0014 1860     		str	r0, [r3]
  114:Core/Src/freertos.c ****   driveTaskHandle = osThreadCreate(osThread(driveTask), NULL);
- 246              		.loc 2 114 3 is_stmt 1 view .LVU34
- 247 0016 134C     		ldr	r4, .L20+4
- 248 0018 0DF11C0C 		add	ip, sp, #28
- 249 001c A646     		mov	lr, r4
- 250 001e BEE80F00 		ldmia	lr!, {r0, r1, r2, r3}
- 251 0022 ACE80F00 		stmia	ip!, {r0, r1, r2, r3}
- 252 0026 9EE80700 		ldm	lr, {r0, r1, r2}
- 253 002a 8CE80700 		stm	ip, {r0, r1, r2}
+ 301              		.loc 1 114 3 is_stmt 1 view .LVU44
+ 302 0016 134C     		ldr	r4, .L24+4
+ 303 0018 0DF11C0C 		add	ip, sp, #28
+ 304 001c A646     		mov	lr, r4
+ 305 001e BEE80F00 		ldmia	lr!, {r0, r1, r2, r3}
+ 306 0022 ACE80F00 		stmia	ip!, {r0, r1, r2, r3}
+ 307 0026 9EE80700 		ldm	lr, {r0, r1, r2}
+ 308 002a 8CE80700 		stm	ip, {r0, r1, r2}
  115:Core/Src/freertos.c **** 
- 254              		.loc 2 115 3 view .LVU35
+ 309              		.loc 1 115 3 view .LVU45
  115:Core/Src/freertos.c **** 
- 255              		.loc 2 115 21 is_stmt 0 view .LVU36
- 256 002e 2946     		mov	r1, r5
- 257 0030 07A8     		add	r0, sp, #28
- 258 0032 FFF7FEFF 		bl	osThreadCreate
- 259              	.LVL15:
+ 310              		.loc 1 115 21 is_stmt 0 view .LVU46
+ 311 002e 2946     		mov	r1, r5
+ 312 0030 07A8     		add	r0, sp, #28
+ 313 0032 FFF7FEFF 		bl	osThreadCreate
+ 314              	.LVL20:
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s 			page 10
+
+
  115:Core/Src/freertos.c **** 
- 260              		.loc 2 115 19 view .LVU37
- 261 0036 0C4B     		ldr	r3, .L20+8
- 262 0038 1860     		str	r0, [r3]
+ 315              		.loc 1 115 19 view .LVU47
+ 316 0036 0C4B     		ldr	r3, .L24+8
+ 317 0038 1860     		str	r0, [r3]
  118:Core/Src/freertos.c ****   commTaskHandle = osThreadCreate(osThread(commTask), NULL);
- 263              		.loc 2 118 3 is_stmt 1 view .LVU38
- 264 003a EE46     		mov	lr, sp
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s 			page 9
-
-
- 265 003c 04F11C0C 		add	ip, r4, #28
- 266 0040 BCE80F00 		ldmia	ip!, {r0, r1, r2, r3}
- 267 0044 AEE80F00 		stmia	lr!, {r0, r1, r2, r3}
- 268 0048 9CE80700 		ldm	ip, {r0, r1, r2}
- 269 004c 8EE80700 		stm	lr, {r0, r1, r2}
+ 318              		.loc 1 118 3 is_stmt 1 view .LVU48
+ 319 003a EE46     		mov	lr, sp
+ 320 003c 04F11C0C 		add	ip, r4, #28
+ 321 0040 BCE80F00 		ldmia	ip!, {r0, r1, r2, r3}
+ 322 0044 AEE80F00 		stmia	lr!, {r0, r1, r2, r3}
+ 323 0048 9CE80700 		ldm	ip, {r0, r1, r2}
+ 324 004c 8EE80700 		stm	lr, {r0, r1, r2}
  119:Core/Src/freertos.c **** 
- 270              		.loc 2 119 3 view .LVU39
+ 325              		.loc 1 119 3 view .LVU49
  119:Core/Src/freertos.c **** 
- 271              		.loc 2 119 20 is_stmt 0 view .LVU40
- 272 0050 2946     		mov	r1, r5
- 273 0052 6846     		mov	r0, sp
- 274 0054 FFF7FEFF 		bl	osThreadCreate
- 275              	.LVL16:
+ 326              		.loc 1 119 20 is_stmt 0 view .LVU50
+ 327 0050 2946     		mov	r1, r5
+ 328 0052 6846     		mov	r0, sp
+ 329 0054 FFF7FEFF 		bl	osThreadCreate
+ 330              	.LVL21:
  119:Core/Src/freertos.c **** 
- 276              		.loc 2 119 18 view .LVU41
- 277 0058 044B     		ldr	r3, .L20+12
- 278 005a 1860     		str	r0, [r3]
+ 331              		.loc 1 119 18 view .LVU51
+ 332 0058 044B     		ldr	r3, .L24+12
+ 333 005a 1860     		str	r0, [r3]
  125:Core/Src/freertos.c **** 
- 279              		.loc 2 125 1 view .LVU42
- 280 005c 11B0     		add	sp, sp, #68
- 281              	.LCFI6:
- 282              		.cfi_def_cfa_offset 12
- 283              		@ sp needed
- 284 005e 30BD     		pop	{r4, r5, pc}
- 285              	.L21:
- 286              		.align	2
- 287              	.L20:
- 288 0060 00000000 		.word	.LANCHOR2
- 289 0064 00000000 		.word	.LANCHOR3
- 290 0068 00000000 		.word	.LANCHOR4
- 291 006c 00000000 		.word	.LANCHOR5
- 292              		.cfi_endproc
- 293              	.LFE224:
- 295              		.global	CommSemaphoreHandle
- 296              		.global	commTaskHandle
- 297              		.global	driveTaskHandle
- 298              		.section	.rodata
- 299              		.align	2
- 300              		.set	.LANCHOR3,. + 0
- 301              	.LC4:
- 302 0000 00000000 		.word	.LC0
- 303 0004 00000000 		.word	StartDriveTask
- 304 0008 0000     		.short	0
- 305 000a 0000     		.space	2
- 306 000c 00000000 		.word	0
- 307 0010 00040000 		.word	1024
- 308 0014 00000000 		.word	0
- 309 0018 00000000 		.word	0
- 310              	.LC5:
- 311 001c 0C000000 		.word	.LC2
- 312 0020 00000000 		.word	StartCommTask
- 313 0024 0000     		.short	0
- 314 0026 0000     		.space	2
- 315 0028 00000000 		.word	0
- 316 002c 00040000 		.word	1024
- 317 0030 00000000 		.word	0
- 318 0034 00000000 		.word	0
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s 			page 10
-
-
- 319              		.section	.bss.CommSemaphoreHandle,"aw",%nobits
- 320              		.align	2
- 321              		.set	.LANCHOR2,. + 0
- 324              	CommSemaphoreHandle:
- 325 0000 00000000 		.space	4
- 326              		.section	.bss.commTaskHandle,"aw",%nobits
- 327              		.align	2
- 328              		.set	.LANCHOR5,. + 0
- 331              	commTaskHandle:
- 332 0000 00000000 		.space	4
- 333              		.section	.bss.driveTaskHandle,"aw",%nobits
- 334              		.align	2
- 335              		.set	.LANCHOR4,. + 0
- 338              	driveTaskHandle:
- 339 0000 00000000 		.space	4
- 340              		.section	.bss.xIdleStack,"aw",%nobits
+ 334              		.loc 1 125 1 view .LVU52
+ 335 005c 11B0     		add	sp, sp, #68
+ 336              	.LCFI8:
+ 337              		.cfi_def_cfa_offset 12
+ 338              		@ sp needed
+ 339 005e 30BD     		pop	{r4, r5, pc}
+ 340              	.L25:
  341              		.align	2
- 342              		.set	.LANCHOR1,. + 0
- 345              	xIdleStack:
- 346 0000 00000000 		.space	512
- 346      00000000 
- 346      00000000 
- 346      00000000 
- 346      00000000 
- 347              		.section	.bss.xIdleTaskTCBBuffer,"aw",%nobits
- 348              		.align	2
- 349              		.set	.LANCHOR0,. + 0
- 352              	xIdleTaskTCBBuffer:
- 353 0000 00000000 		.space	84
- 353      00000000 
- 353      00000000 
- 353      00000000 
- 353      00000000 
- 354              		.text
- 355              	.Letext0:
- 356              		.file 4 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
- 357              		.file 5 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
- 358              		.file 6 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h"
- 359              		.file 7 "Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h"
- 360              		.file 8 "Middlewares/Third_Party/FreeRTOS/Source/include/task.h"
- 361              		.file 9 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h"
- 362              		.file 10 "Middlewares/Third_Party/FreeRTOS/Source/include/queue.h"
- 363              		.file 11 "Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h"
- 364              		.file 12 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
- 365              		.file 13 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h"
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s 			page 11
+ 342              	.L24:
+ 343 0060 00000000 		.word	CommSemaphoreHandle
+ 344 0064 00000000 		.word	.LANCHOR0
+ 345 0068 00000000 		.word	driveTaskHandle
+ 346 006c 00000000 		.word	commTaskHandle
+ 347              		.cfi_endproc
+ 348              	.LFE225:
+ 350              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 351              		.align	2
+ 352              	.LC2:
+ 353 0000 636F6D6D 		.ascii	"commTask\000"
+ 353      5461736B 
+ 353      00
+ 354 0009 000000   		.align	2
+ 355              	.LC0:
+ 356 000c 64726976 		.ascii	"driveTask\000"
+ 356      65546173 
+ 356      6B00
+ 357              		.section	.bss.xIdleStack,"aw",%nobits
+ 358              		.align	2
+ 361              	xIdleStack:
+ 362 0000 00000000 		.space	512
+ 362      00000000 
+ 362      00000000 
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s 			page 11
+
+
+ 362      00000000 
+ 362      00000000 
+ 363              		.section	.bss.xIdleTaskTCBBuffer,"aw",%nobits
+ 364              		.align	2
+ 367              	xIdleTaskTCBBuffer:
+ 368 0000 00000000 		.space	84
+ 368      00000000 
+ 368      00000000 
+ 368      00000000 
+ 368      00000000 
+ 369              		.global	CommSemaphoreHandle
+ 370              		.section	.bss.CommSemaphoreHandle,"aw",%nobits
+ 371              		.align	2
+ 374              	CommSemaphoreHandle:
+ 375 0000 00000000 		.space	4
+ 376              		.global	commTaskHandle
+ 377              		.section	.bss.commTaskHandle,"aw",%nobits
+ 378              		.align	2
+ 381              	commTaskHandle:
+ 382 0000 00000000 		.space	4
+ 383              		.global	driveTaskHandle
+ 384              		.section	.bss.driveTaskHandle,"aw",%nobits
+ 385              		.align	2
+ 388              	driveTaskHandle:
+ 389 0000 00000000 		.space	4
+ 390              		.global	data
+ 391              		.section	.rodata.str1.4
+ 392 0016 0000     		.align	2
+ 393              	.LC6:
+ 394 0018 74657374 		.ascii	"test\000"
+ 394      00
+ 395              		.section	.data.data,"aw"
+ 396              		.align	2
+ 399              	data:
+ 400 0000 18000000 		.word	.LC6
+ 401              		.section	.rodata
+ 402              		.align	2
+ 403              		.set	.LANCHOR0,. + 0
+ 404              	.LC4:
+ 405 0000 0C000000 		.word	.LC0
+ 406 0004 00000000 		.word	StartDriveTask
+ 407 0008 0000     		.short	0
+ 408 000a 0000     		.space	2
+ 409 000c 00000000 		.word	0
+ 410 0010 00040000 		.word	1024
+ 411 0014 00000000 		.word	0
+ 412 0018 00000000 		.word	0
+ 413              	.LC5:
+ 414 001c 00000000 		.word	.LC2
+ 415 0020 00000000 		.word	StartCommTask
+ 416 0024 0000     		.short	0
+ 417 0026 0000     		.space	2
+ 418 0028 00000000 		.word	0
+ 419 002c 00040000 		.word	1024
+ 420 0030 00000000 		.word	0
+ 421 0034 00000000 		.word	0
+ 422              		.text
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s 			page 12
+
+
+ 423              	.Letext0:
+ 424              		.file 4 "c:\\program files\\arm-gnu-toolchain-12.2.mpacbti-rel1-mingw-w64-i686-arm-none-eabi\\lib\
+ 425              		.file 5 "c:\\program files\\arm-gnu-toolchain-12.2.mpacbti-rel1-mingw-w64-i686-arm-none-eabi\\arm-
+ 426              		.file 6 "c:\\program files\\arm-gnu-toolchain-12.2.mpacbti-rel1-mingw-w64-i686-arm-none-eabi\\arm-
+ 427              		.file 7 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h"
+ 428              		.file 8 "Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h"
+ 429              		.file 9 "Middlewares/Third_Party/FreeRTOS/Source/include/task.h"
+ 430              		.file 10 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h"
+ 431              		.file 11 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
+ 432              		.file 12 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
+ 433              		.file 13 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
+ 434              		.file 14 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h"
+ 435              		.file 15 "Middlewares/Third_Party/FreeRTOS/Source/include/queue.h"
+ 436              		.file 16 "Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h"
+ 437              		.file 17 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h"
+ 438              		.file 18 "Core/Inc/usart.h"
+ 439              		.file 19 "c:\\program files\\arm-gnu-toolchain-12.2.mpacbti-rel1-mingw-w64-i686-arm-none-eabi\\arm
+ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s 			page 13
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 freertos.c
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:17     .rodata.str1.4:00000000 $d
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:27     .text.ExStartDriveTask:00000000 $t
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:33     .text.ExStartDriveTask:00000000 ExStartDriveTask
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:69     .text.ExStartDriveTask:00000020 $d
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:74     .text.StartDriveTask:00000000 $t
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:80     .text.StartDriveTask:00000000 StartDriveTask
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:103    .text.ExStartCommTask:00000000 $t
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:109    .text.ExStartCommTask:00000000 ExStartCommTask
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:142    .text.ExStartCommTask:00000018 $d
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:147    .text.StartCommTask:00000000 $t
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:153    .text.StartCommTask:00000000 StartCommTask
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:175    .text.vApplicationGetIdleTaskMemory:00000000 $t
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:181    .text.vApplicationGetIdleTaskMemory:00000000 vApplicationGetIdleTaskMemory
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:206    .text.vApplicationGetIdleTaskMemory:00000010 $d
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:212    .text.MX_FREERTOS_Init:00000000 $t
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:218    .text.MX_FREERTOS_Init:00000000 MX_FREERTOS_Init
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:288    .text.MX_FREERTOS_Init:00000060 $d
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:324    .bss.CommSemaphoreHandle:00000000 CommSemaphoreHandle
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:331    .bss.commTaskHandle:00000000 commTaskHandle
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:338    .bss.driveTaskHandle:00000000 driveTaskHandle
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:299    .rodata:00000000 $d
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:320    .bss.CommSemaphoreHandle:00000000 $d
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:327    .bss.commTaskHandle:00000000 $d
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:334    .bss.driveTaskHandle:00000000 $d
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:341    .bss.xIdleStack:00000000 $d
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:345    .bss.xIdleStack:00000000 xIdleStack
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:348    .bss.xIdleTaskTCBBuffer:00000000 $d
-C:\Users\tomek\AppData\Local\Temp\cchOCMpI.s:352    .bss.xIdleTaskTCBBuffer:00000000 xIdleTaskTCBBuffer
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:21     .text.ExStartDriveTask:00000000 $t
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:27     .text.ExStartDriveTask:00000000 ExStartDriveTask
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:59     .text.ExStartDriveTask:00000018 $d
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:64     .text.StartDriveTask:00000000 $t
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:70     .text.StartDriveTask:00000000 StartDriveTask
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:92     .text.ExStartCommTask:00000000 $t
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:98     .text.ExStartCommTask:00000000 ExStartCommTask
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:150    .text.ExStartCommTask:00000030 $d
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:399    .data.data:00000000 data
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:156    .text.StartCommTask:00000000 $t
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:162    .text.StartCommTask:00000000 StartCommTask
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:184    .text.sendMess:00000000 $t
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:190    .text.sendMess:00000000 sendMess
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:224    .text.sendMess:0000001c $d
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:230    .text.vApplicationGetIdleTaskMemory:00000000 $t
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:236    .text.vApplicationGetIdleTaskMemory:00000000 vApplicationGetIdleTaskMemory
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:261    .text.vApplicationGetIdleTaskMemory:00000010 $d
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:367    .bss.xIdleTaskTCBBuffer:00000000 xIdleTaskTCBBuffer
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:361    .bss.xIdleStack:00000000 xIdleStack
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:267    .text.MX_FREERTOS_Init:00000000 $t
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:273    .text.MX_FREERTOS_Init:00000000 MX_FREERTOS_Init
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:343    .text.MX_FREERTOS_Init:00000060 $d
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:374    .bss.CommSemaphoreHandle:00000000 CommSemaphoreHandle
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:388    .bss.driveTaskHandle:00000000 driveTaskHandle
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:381    .bss.commTaskHandle:00000000 commTaskHandle
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:351    .rodata.str1.4:00000000 $d
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:358    .bss.xIdleStack:00000000 $d
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:364    .bss.xIdleTaskTCBBuffer:00000000 $d
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:371    .bss.CommSemaphoreHandle:00000000 $d
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:378    .bss.commTaskHandle:00000000 $d
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:385    .bss.driveTaskHandle:00000000 $d
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:396    .data.data:00000000 $d
+C:\Users\Bgs\AppData\Local\Temp\ccKo8jK0.s:402    .rodata:00000000 $d
 
 UNDEFINED SYMBOLS
-osDelay
 HAL_GPIO_WritePin
+osDelay
+strlen
+HAL_UART_Transmit
+HAL_UART_Receive
+huart6
 osSemaphoreCreate
 osThreadCreate
