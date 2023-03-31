@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 1
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -19,15 +19,15 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 1
   16              		.text
   17              	.Ltext0:
   18              		.cfi_sections	.debug_frame
-  19              		.file 1 "Core/Src/adc.c"
-  20              		.section	.text.MX_ADC1_Init,"ax",%progbits
-  21              		.align	1
-  22              		.global	MX_ADC1_Init
-  23              		.syntax unified
-  24              		.thumb
-  25              		.thumb_func
-  27              	MX_ADC1_Init:
-  28              	.LFB216:
+  19              		.section	.text.MX_ADC1_Init,"ax",%progbits
+  20              		.align	1
+  21              		.global	MX_ADC1_Init
+  22              		.syntax unified
+  23              		.thumb
+  24              		.thumb_func
+  26              	MX_ADC1_Init:
+  27              	.LFB216:
+  28              		.file 1 "Core/Src/adc.c"
    1:Core/Src/adc.c **** /* USER CODE BEGIN Header */
    2:Core/Src/adc.c **** /**
    3:Core/Src/adc.c ****   ******************************************************************************
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 1
   28:Core/Src/adc.c **** 
   29:Core/Src/adc.c **** /* ADC1 init function */
   30:Core/Src/adc.c **** void MX_ADC1_Init(void)
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 2
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s 			page 2
 
 
   31:Core/Src/adc.c **** {
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 1
   64 001c 0376     		strb	r3, [r0, #24]
   50:Core/Src/adc.c ****   hadc1.Init.DiscontinuousConvMode = DISABLE;
   65              		.loc 1 50 3 is_stmt 1 view .LVU13
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 3
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s 			page 3
 
 
   66              		.loc 1 50 36 is_stmt 0 view .LVU14
@@ -136,10 +136,10 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 1
   75              		.loc 1 53 3 is_stmt 1 view .LVU19
   76              		.loc 1 53 24 is_stmt 0 view .LVU20
   77 0028 C360     		str	r3, [r0, #12]
-  54:Core/Src/adc.c ****   hadc1.Init.NbrOfConversion = 10;
+  54:Core/Src/adc.c ****   hadc1.Init.NbrOfConversion = 2;
   78              		.loc 1 54 3 is_stmt 1 view .LVU21
   79              		.loc 1 54 30 is_stmt 0 view .LVU22
-  80 002a 0A21     		movs	r1, #10
+  80 002a 0221     		movs	r1, #2
   81 002c C161     		str	r1, [r0, #28]
   55:Core/Src/adc.c ****   hadc1.Init.DMAContinuousRequests = DISABLE;
   82              		.loc 1 55 3 is_stmt 1 view .LVU23
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 1
  104              		.loc 1 66 3 is_stmt 1 view .LVU34
  105              		.loc 1 66 24 is_stmt 0 view .LVU35
  106 0044 0523     		movs	r3, #5
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 4
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s 			page 4
 
 
  107 0046 0293     		str	r3, [sp, #8]
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 1
  143 006e 0193     		str	r3, [sp, #4]
   85:Core/Src/adc.c ****   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
  144              		.loc 1 85 3 is_stmt 1 view .LVU50
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 5
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s 			page 5
 
 
  145              		.loc 1 85 7 is_stmt 0 view .LVU51
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 1
  181              		.loc 1 103 7 is_stmt 0 view .LVU65
  182 0098 6946     		mov	r1, sp
  183 009a 2B48     		ldr	r0, .L25
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 6
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s 			page 6
 
 
  184 009c FFF7FEFF 		bl	HAL_ADC_ConfigChannel
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 1
  220 00c4 FFF7FEFF 		bl	HAL_ADC_ConfigChannel
  221              	.LVL7:
  222              		.loc 1 121 6 view .LVU80
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 7
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s 			page 7
 
 
  223 00c8 90BB     		cbnz	r0, .L21
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 1
  140:Core/Src/adc.c ****   {
  141:Core/Src/adc.c ****     Error_Handler();
  142:Core/Src/adc.c ****   }
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 8
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s 			page 8
 
 
  143:Core/Src/adc.c **** 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 1
  296              		.loc 1 78 5 view .LVU105
  297 0112 FFF7FEFF 		bl	Error_Handler
  298              	.LVL13:
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 9
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s 			page 9
 
 
  299 0116 A7E7     		b	.L4
@@ -534,11 +534,11 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 1
  341              	.L26:
  342              		.align	2
  343              	.L25:
- 344 0148 00000000 		.word	hadc1
+ 344 0148 00000000 		.word	.LANCHOR0
  345 014c 00200140 		.word	1073815552
  346 0150 0100000F 		.word	251658241
  347              		.cfi_endproc
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 10
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s 			page 10
 
 
  348              	.LFE216:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 1
  169:Core/Src/adc.c **** 
  170:Core/Src/adc.c ****     __HAL_RCC_GPIOA_CLK_ENABLE();
  171:Core/Src/adc.c ****     __HAL_RCC_GPIOB_CLK_ENABLE();
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 11
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s 			page 11
 
 
  172:Core/Src/adc.c ****     /**ADC1 GPIO Configuration
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 1
  414 0032 5A6C     		ldr	r2, [r3, #68]
  415 0034 02F48072 		and	r2, r2, #256
  416 0038 0092     		str	r2, [sp]
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 12
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s 			page 12
 
 
  168:Core/Src/adc.c **** 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 1
  455 0064 FF23     		movs	r3, #255
  456 0066 0393     		str	r3, [sp, #12]
  186:Core/Src/adc.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 13
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s 			page 13
 
 
  457              		.loc 1 186 5 is_stmt 1 view .LVU143
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 1
  502              	.LFB218:
  200:Core/Src/adc.c **** 
  201:Core/Src/adc.c **** void HAL_ADC_MspDeInit(ADC_HandleTypeDef* adcHandle)
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 14
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s 			page 14
 
 
  202:Core/Src/adc.c **** {
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 1
  525              	.L36:
  210:Core/Src/adc.c **** 
  526              		.loc 1 210 5 is_stmt 1 view .LVU162
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 15
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s 			page 15
 
 
  527 000c 074A     		ldr	r2, .L37+4
@@ -874,40 +874,41 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 1
  555              		.global	hadc1
  556              		.section	.bss.hadc1,"aw",%nobits
  557              		.align	2
- 560              	hadc1:
- 561 0000 00000000 		.space	72
- 561      00000000 
- 561      00000000 
- 561      00000000 
- 561      00000000 
- 562              		.text
- 563              	.Letext0:
- 564              		.file 2 "c:\\program files\\arm-gnu-toolchain-12.2.mpacbti-rel1-mingw-w64-i686-arm-none-eabi\\arm-
- 565              		.file 3 "c:\\program files\\arm-gnu-toolchain-12.2.mpacbti-rel1-mingw-w64-i686-arm-none-eabi\\arm-
- 566              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h"
- 567              		.file 5 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h"
- 568              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
- 569              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
- 570              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
- 571              		.file 9 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h"
- 572              		.file 10 "Core/Inc/adc.h"
- 573              		.file 11 "Core/Inc/main.h"
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s 			page 16
+ 558              		.set	.LANCHOR0,. + 0
+ 561              	hadc1:
+ 562 0000 00000000 		.space	72
+ 562      00000000 
+ 562      00000000 
+ 562      00000000 
+ 562      00000000 
+ 563              		.text
+ 564              	.Letext0:
+ 565              		.file 2 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+ 566              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+ 567              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h"
+ 568              		.file 5 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h"
+ 569              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
+ 570              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
+ 571              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
+ 572              		.file 9 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h"
+ 573              		.file 10 "Core/Inc/main.h"
+ 574              		.file 11 "Core/Inc/adc.h"
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s 			page 16
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 adc.c
-C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s:21     .text.MX_ADC1_Init:00000000 $t
-C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s:27     .text.MX_ADC1_Init:00000000 MX_ADC1_Init
-C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s:344    .text.MX_ADC1_Init:00000148 $d
-C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s:560    .bss.hadc1:00000000 hadc1
-C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s:351    .text.HAL_ADC_MspInit:00000000 $t
-C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s:357    .text.HAL_ADC_MspInit:00000000 HAL_ADC_MspInit
-C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s:488    .text.HAL_ADC_MspInit:00000084 $d
-C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s:494    .text.HAL_ADC_MspDeInit:00000000 $t
-C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s:500    .text.HAL_ADC_MspDeInit:00000000 HAL_ADC_MspDeInit
-C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s:548    .text.HAL_ADC_MspDeInit:00000028 $d
-C:\Users\Bgs\AppData\Local\Temp\ccOQqKeE.s:557    .bss.hadc1:00000000 $d
+C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s:20     .text.MX_ADC1_Init:00000000 $t
+C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s:26     .text.MX_ADC1_Init:00000000 MX_ADC1_Init
+C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s:344    .text.MX_ADC1_Init:00000148 $d
+C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s:351    .text.HAL_ADC_MspInit:00000000 $t
+C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s:357    .text.HAL_ADC_MspInit:00000000 HAL_ADC_MspInit
+C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s:488    .text.HAL_ADC_MspInit:00000084 $d
+C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s:494    .text.HAL_ADC_MspDeInit:00000000 $t
+C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s:500    .text.HAL_ADC_MspDeInit:00000000 HAL_ADC_MspDeInit
+C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s:548    .text.HAL_ADC_MspDeInit:00000028 $d
+C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s:561    .bss.hadc1:00000000 hadc1
+C:\Users\tomek\AppData\Local\Temp\ccADvnlZ.s:557    .bss.hadc1:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_ADC_Init
