@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 1
+=======
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s 			page 1
+>>>>>>> pr/2
 
 
    1              		.cpu cortex-m4
@@ -19,16 +23,16 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 1
   16              		.text
   17              	.Ltext0:
   18              		.cfi_sections	.debug_frame
-  19              		.file 1 "Core/Src/main.c"
-  20              		.section	.text.HAL_TIM_PeriodElapsedCallback,"ax",%progbits
-  21              		.align	1
-  22              		.global	HAL_TIM_PeriodElapsedCallback
-  23              		.syntax unified
-  24              		.thumb
-  25              		.thumb_func
-  27              	HAL_TIM_PeriodElapsedCallback:
-  28              	.LVL0:
-  29              	.LFB223:
+  19              		.section	.text.HAL_TIM_PeriodElapsedCallback,"ax",%progbits
+  20              		.align	1
+  21              		.global	HAL_TIM_PeriodElapsedCallback
+  22              		.syntax unified
+  23              		.thumb
+  24              		.thumb_func
+  26              	HAL_TIM_PeriodElapsedCallback:
+  27              	.LVL0:
+  28              	.LFB223:
+  29              		.file 1 "Core/Src/main.c"
    1:Core/Src/main.c **** /* USER CODE BEGIN Header */
    2:Core/Src/main.c **** /**
    3:Core/Src/main.c ****   ******************************************************************************
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 1
   27:Core/Src/main.c **** /* Private includes ----------------------------------------------------------*/
   28:Core/Src/main.c **** /* USER CODE BEGIN Includes */
   29:Core/Src/main.c **** 
+<<<<<<< HEAD
 ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 2
+=======
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s 			page 2
+>>>>>>> pr/2
 
 
   30:Core/Src/main.c **** /* USER CODE END Includes */
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 1
   84:Core/Src/main.c ****   /* Configure the system clock */
   85:Core/Src/main.c ****   SystemClock_Config();
   86:Core/Src/main.c **** 
+<<<<<<< HEAD
 ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 3
+=======
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s 			page 3
+>>>>>>> pr/2
 
 
   87:Core/Src/main.c ****   /* USER CODE BEGIN SysInit */
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 1
  141:Core/Src/main.c **** 
  142:Core/Src/main.c ****   /** Initializes the CPU, AHB and APB buses clocks
  143:Core/Src/main.c ****   */
+<<<<<<< HEAD
 ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 4
+=======
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s 			page 4
+>>>>>>> pr/2
 
 
  144:Core/Src/main.c ****   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
@@ -238,7 +254,11 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 1
  179:Core/Src/main.c ****   /* USER CODE END Callback 1 */
  180:Core/Src/main.c **** }
   49              		.loc 1 180 1 view .LVU5
+<<<<<<< HEAD
 ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 5
+=======
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s 			page 5
+>>>>>>> pr/2
 
 
   50 000a 08BD     		pop	{r3, pc}
@@ -298,7 +318,11 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 1
   12:Drivers/CMSIS/Include/cmsis_gcc.h ****  * Licensed under the Apache License, Version 2.0 (the License); you may
   13:Drivers/CMSIS/Include/cmsis_gcc.h ****  * not use this file except in compliance with the License.
   14:Drivers/CMSIS/Include/cmsis_gcc.h ****  * You may obtain a copy of the License at
+<<<<<<< HEAD
 ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 6
+=======
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s 			page 6
+>>>>>>> pr/2
 
 
   15:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
@@ -358,7 +382,11 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 1
   69:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
   70:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT32        /* deprecated */
   71:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
+<<<<<<< HEAD
 ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 7
+=======
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s 			page 7
+>>>>>>> pr/2
 
 
   72:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
@@ -418,7 +446,11 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 1
  126:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Enables IRQ interrupts by clearing the I-bit in the CPSR.
  127:Drivers/CMSIS/Include/cmsis_gcc.h ****            Can only be executed in Privileged modes.
  128:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+<<<<<<< HEAD
 ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 8
+=======
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s 			page 8
+>>>>>>> pr/2
 
 
  129:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __enable_irq(void)
@@ -478,7 +510,11 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 1
  121              	.LCFI2:
  122              		.cfi_def_cfa_offset 88
  123:Core/Src/main.c ****   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+<<<<<<< HEAD
 ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 9
+=======
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s 			page 9
+>>>>>>> pr/2
 
 
  123              		.loc 1 123 3 view .LVU16
@@ -538,7 +574,11 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 1
  164              		.loc 1 129 3 view .LVU29
  165 003c 1268     		ldr	r2, [r2]
  166 003e 02F44042 		and	r2, r2, #49152
+<<<<<<< HEAD
 ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 10
+=======
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s 			page 10
+>>>>>>> pr/2
 
 
  167 0042 0292     		str	r2, [sp, #8]
@@ -598,7 +638,11 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 1
  148:Core/Src/main.c ****   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
  203              		.loc 1 148 36 is_stmt 0 view .LVU48
  204 0066 0691     		str	r1, [sp, #24]
+<<<<<<< HEAD
 ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 11
+=======
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s 			page 11
+>>>>>>> pr/2
 
 
  149:Core/Src/main.c **** 
@@ -658,7 +702,11 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 1
  252              		@ args = 0, pretend = 0, frame = 0
  253              		@ frame_needed = 0, uses_anonymous_args = 0
  254 0000 08B5     		push	{r3, lr}
+<<<<<<< HEAD
 ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 12
+=======
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s 			page 12
+>>>>>>> pr/2
 
 
  255              	.LCFI5:
@@ -709,29 +757,44 @@ ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 1
  289              	.LFE221:
  291              		.text
  292              	.Letext0:
+<<<<<<< HEAD
  293              		.file 3 "c:\\program files\\arm-gnu-toolchain-12.2.mpacbti-rel1-mingw-w64-i686-arm-none-eabi\\arm-
  294              		.file 4 "c:\\program files\\arm-gnu-toolchain-12.2.mpacbti-rel1-mingw-w64-i686-arm-none-eabi\\arm-
+=======
+ 293              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+ 294              		.file 4 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+>>>>>>> pr/2
  295              		.file 5 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h"
  296              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
  297              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h"
  298              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h"
  299              		.file 9 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
  300              		.file 10 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h"
+<<<<<<< HEAD
  301              		.file 11 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h"
 ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 13
+=======
+ 301              		.file 11 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s 			page 13
+>>>>>>> pr/2
 
 
- 302              		.file 12 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
- 303              		.file 13 "Core/Inc/usart.h"
+ 302              		.file 12 "Core/Inc/gpio.h"
+ 303              		.file 13 "Core/Inc/adc.h"
  304              		.file 14 "Core/Inc/tim.h"
- 305              		.file 15 "Core/Inc/adc.h"
- 306              		.file 16 "Core/Inc/gpio.h"
+ 305              		.file 15 "Core/Inc/usart.h"
+ 306              		.file 16 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h"
  307              		.file 17 "<built-in>"
+<<<<<<< HEAD
 ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s 			page 14
+=======
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s 			page 14
+>>>>>>> pr/2
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.c
+<<<<<<< HEAD
 C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s:21     .text.HAL_TIM_PeriodElapsedCallback:00000000 $t
 C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s:27     .text.HAL_TIM_PeriodElapsedCallback:00000000 HAL_TIM_PeriodElapsedCallback
 C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s:61     .text.HAL_TIM_PeriodElapsedCallback:00000014 $d
@@ -742,6 +805,18 @@ C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s:110    .text.SystemClock_Config:00000
 C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s:235    .text.SystemClock_Config:00000080 $d
 C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s:241    .text.main:00000000 $t
 C:\Users\Bgs\AppData\Local\Temp\ccQ1O4Fj.s:247    .text.main:00000000 main
+=======
+C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s:20     .text.HAL_TIM_PeriodElapsedCallback:00000000 $t
+C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s:26     .text.HAL_TIM_PeriodElapsedCallback:00000000 HAL_TIM_PeriodElapsedCallback
+C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s:61     .text.HAL_TIM_PeriodElapsedCallback:00000014 $d
+C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s:66     .text.Error_Handler:00000000 $t
+C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s:72     .text.Error_Handler:00000000 Error_Handler
+C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s:104    .text.SystemClock_Config:00000000 $t
+C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s:110    .text.SystemClock_Config:00000000 SystemClock_Config
+C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s:235    .text.SystemClock_Config:00000080 $d
+C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s:241    .text.main:00000000 $t
+C:\Users\tomek\AppData\Local\Temp\ccBHYR2e.s:247    .text.main:00000000 main
+>>>>>>> pr/2
 
 UNDEFINED SYMBOLS
 HAL_IncTick
