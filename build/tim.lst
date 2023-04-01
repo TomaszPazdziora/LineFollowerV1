@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s 			page 1
-=======
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 1
->>>>>>> pr/2
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -62,11 +58,7 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 1
   27:Core/Src/tim.c **** TIM_HandleTypeDef htim4;
   28:Core/Src/tim.c **** 
   29:Core/Src/tim.c **** /* TIM4 init function */
-<<<<<<< HEAD
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s 			page 2
-=======
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 2
->>>>>>> pr/2
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s 			page 2
 
 
   30:Core/Src/tim.c **** void MX_TIM4_Init(void)
@@ -126,11 +118,7 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 1
   80:Core/Src/tim.c **** 
   81:Core/Src/tim.c ****   if(tim_pwmHandle->Instance==TIM4)
   34              		.loc 1 81 3 view .LVU1
-<<<<<<< HEAD
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s 			page 3
-=======
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 3
->>>>>>> pr/2
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s 			page 3
 
 
   35              		.loc 1 81 19 is_stmt 0 view .LVU2
@@ -190,11 +178,7 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 1
   78 0032 FFF7FEFF 		bl	HAL_NVIC_EnableIRQ
   79              	.LVL3:
   92:Core/Src/tim.c ****   /* USER CODE BEGIN TIM4_MspInit 1 */
-<<<<<<< HEAD
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s 			page 4
-=======
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 4
->>>>>>> pr/2
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s 			page 4
 
 
   93:Core/Src/tim.c **** 
@@ -254,11 +238,7 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 1
  127 0012 0E4B     		ldr	r3, .L14
  128 0014 9A42     		cmp	r2, r3
  129 0016 02D0     		beq	.L13
-<<<<<<< HEAD
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s 			page 5
-=======
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 5
->>>>>>> pr/2
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s 			page 5
 
 
  130              	.LVL5:
@@ -318,11 +298,7 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 1
  107:Core/Src/tim.c ****     /**TIM4 GPIO Configuration
  157              		.loc 1 107 5 view .LVU27
  158 0034 009B     		ldr	r3, [sp]
-<<<<<<< HEAD
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s 			page 6
-=======
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 6
->>>>>>> pr/2
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s 			page 6
 
 
  159              	.LBE3:
@@ -382,11 +358,7 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 1
  203              		@ args = 0, pretend = 0, frame = 40
  204              		@ frame_needed = 0, uses_anonymous_args = 0
  205 0000 00B5     		push	{lr}
-<<<<<<< HEAD
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s 			page 7
-=======
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 7
->>>>>>> pr/2
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s 			page 7
 
 
  206              	.LCFI7:
@@ -446,11 +418,7 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 1
  245              		.loc 1 48 3 is_stmt 1 view .LVU55
   48:Core/Src/tim.c ****   if (HAL_TIM_PWM_Init(&htim4) != HAL_OK)
  246              		.loc 1 48 32 is_stmt 0 view .LVU56
-<<<<<<< HEAD
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s 			page 8
-=======
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 8
->>>>>>> pr/2
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s 			page 8
 
 
  247 002a 8023     		movs	r3, #128
@@ -510,11 +478,7 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 1
   62:Core/Src/tim.c ****   if (HAL_TIM_PWM_ConfigChannel(&htim4, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
  284              		.loc 1 62 24 is_stmt 0 view .LVU74
  285 004e 0592     		str	r2, [sp, #20]
-<<<<<<< HEAD
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s 			page 9
-=======
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 9
->>>>>>> pr/2
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s 			page 9
 
 
   63:Core/Src/tim.c ****   {
@@ -574,11 +538,7 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 1
  329              		.loc 1 65 5 view .LVU85
  330 0080 FFF7FEFF 		bl	Error_Handler
  331              	.LVL16:
-<<<<<<< HEAD
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s 			page 10
-=======
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 10
->>>>>>> pr/2
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s 			page 10
 
 
  332 0084 E9E7     		b	.L19
@@ -638,11 +598,7 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 1
  137:Core/Src/tim.c ****     /* TIM4 interrupt Deinit */
  138:Core/Src/tim.c ****     HAL_NVIC_DisableIRQ(TIM4_IRQn);
  139:Core/Src/tim.c ****   /* USER CODE BEGIN TIM4_MspDeInit 1 */
-<<<<<<< HEAD
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s 			page 11
-=======
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 11
->>>>>>> pr/2
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s 			page 11
 
 
  140:Core/Src/tim.c **** 
@@ -679,28 +635,6 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 1
  400              		.global	htim4
  401              		.section	.bss.htim4,"aw",%nobits
  402              		.align	2
-<<<<<<< HEAD
- 405              	htim4:
- 406 0000 00000000 		.space	72
- 406      00000000 
- 406      00000000 
- 406      00000000 
- 406      00000000 
- 407              		.text
- 408              	.Letext0:
- 409              		.file 2 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h"
- 410              		.file 3 "c:\\program files\\arm-gnu-toolchain-12.2.mpacbti-rel1-mingw-w64-i686-arm-none-eabi\\arm-
- 411              		.file 4 "c:\\program files\\arm-gnu-toolchain-12.2.mpacbti-rel1-mingw-w64-i686-arm-none-eabi\\arm-
- 412              		.file 5 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
- 413              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
- 414              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
- 415              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h"
- 416              		.file 9 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h"
- 417              		.file 10 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h"
- 418              		.file 11 "Core/Inc/tim.h"
- 419              		.file 12 "Core/Inc/main.h"
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s 			page 12
-=======
  403              		.set	.LANCHOR0,. + 0
  406              	htim4:
  407 0000 00000000 		.space	72
@@ -721,43 +655,25 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 1
  418              		.file 10 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h"
  419              		.file 11 "Core/Inc/main.h"
  420              		.file 12 "Core/Inc/tim.h"
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\cchXTx22.s 			page 12
->>>>>>> pr/2
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s 			page 12
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 tim.c
-<<<<<<< HEAD
-C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s:21     .text.HAL_TIM_PWM_MspInit:00000000 $t
-C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s:27     .text.HAL_TIM_PWM_MspInit:00000000 HAL_TIM_PWM_MspInit
-C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s:89     .text.HAL_TIM_PWM_MspInit:0000003c $d
-C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s:94     .text.HAL_TIM_MspPostInit:00000000 $t
-C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s:100    .text.HAL_TIM_MspPostInit:00000000 HAL_TIM_MspPostInit
-C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s:186    .text.HAL_TIM_MspPostInit:0000004c $d
-C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s:193    .text.MX_TIM4_Init:00000000 $t
-C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s:199    .text.MX_TIM4_Init:00000000 MX_TIM4_Init
-C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s:341    .text.MX_TIM4_Init:0000008c $d
-C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s:405    .bss.htim4:00000000 htim4
-C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s:347    .text.HAL_TIM_PWM_MspDeInit:00000000 $t
-C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s:353    .text.HAL_TIM_PWM_MspDeInit:00000000 HAL_TIM_PWM_MspDeInit
-C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s:395    .text.HAL_TIM_PWM_MspDeInit:00000020 $d
-C:\Users\Bgs\AppData\Local\Temp\ccqW4Ig3.s:402    .bss.htim4:00000000 $d
-=======
-C:\Users\tomek\AppData\Local\Temp\cchXTx22.s:20     .text.HAL_TIM_PWM_MspInit:00000000 $t
-C:\Users\tomek\AppData\Local\Temp\cchXTx22.s:26     .text.HAL_TIM_PWM_MspInit:00000000 HAL_TIM_PWM_MspInit
-C:\Users\tomek\AppData\Local\Temp\cchXTx22.s:89     .text.HAL_TIM_PWM_MspInit:0000003c $d
-C:\Users\tomek\AppData\Local\Temp\cchXTx22.s:94     .text.HAL_TIM_MspPostInit:00000000 $t
-C:\Users\tomek\AppData\Local\Temp\cchXTx22.s:100    .text.HAL_TIM_MspPostInit:00000000 HAL_TIM_MspPostInit
-C:\Users\tomek\AppData\Local\Temp\cchXTx22.s:186    .text.HAL_TIM_MspPostInit:0000004c $d
-C:\Users\tomek\AppData\Local\Temp\cchXTx22.s:193    .text.MX_TIM4_Init:00000000 $t
-C:\Users\tomek\AppData\Local\Temp\cchXTx22.s:199    .text.MX_TIM4_Init:00000000 MX_TIM4_Init
-C:\Users\tomek\AppData\Local\Temp\cchXTx22.s:341    .text.MX_TIM4_Init:0000008c $d
-C:\Users\tomek\AppData\Local\Temp\cchXTx22.s:347    .text.HAL_TIM_PWM_MspDeInit:00000000 $t
-C:\Users\tomek\AppData\Local\Temp\cchXTx22.s:353    .text.HAL_TIM_PWM_MspDeInit:00000000 HAL_TIM_PWM_MspDeInit
-C:\Users\tomek\AppData\Local\Temp\cchXTx22.s:395    .text.HAL_TIM_PWM_MspDeInit:00000020 $d
-C:\Users\tomek\AppData\Local\Temp\cchXTx22.s:406    .bss.htim4:00000000 htim4
-C:\Users\tomek\AppData\Local\Temp\cchXTx22.s:402    .bss.htim4:00000000 $d
->>>>>>> pr/2
+C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s:20     .text.HAL_TIM_PWM_MspInit:00000000 $t
+C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s:26     .text.HAL_TIM_PWM_MspInit:00000000 HAL_TIM_PWM_MspInit
+C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s:89     .text.HAL_TIM_PWM_MspInit:0000003c $d
+C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s:94     .text.HAL_TIM_MspPostInit:00000000 $t
+C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s:100    .text.HAL_TIM_MspPostInit:00000000 HAL_TIM_MspPostInit
+C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s:186    .text.HAL_TIM_MspPostInit:0000004c $d
+C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s:193    .text.MX_TIM4_Init:00000000 $t
+C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s:199    .text.MX_TIM4_Init:00000000 MX_TIM4_Init
+C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s:341    .text.MX_TIM4_Init:0000008c $d
+C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s:347    .text.HAL_TIM_PWM_MspDeInit:00000000 $t
+C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s:353    .text.HAL_TIM_PWM_MspDeInit:00000000 HAL_TIM_PWM_MspDeInit
+C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s:395    .text.HAL_TIM_PWM_MspDeInit:00000020 $d
+C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s:406    .bss.htim4:00000000 htim4
+C:\Users\tomek\AppData\Local\Temp\cc0dcnTj.s:402    .bss.htim4:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_NVIC_SetPriority

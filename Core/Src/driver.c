@@ -1,20 +1,13 @@
 #include "FreeRTOS.h"
 #include "task.h"
-#include "main.h"
 #include "cmsis_os.h"
 #include "adc.h"
-#include <stdbool.h>
-
-#define SENSOR_NUMBER 2
-#define TRESHOLD 1024
-#define CLEARED_READING 2048
 
 bool isWhite[SENSOR_NUMBER];
 int readings[SENSOR_NUMBER];
 
 void clearReadings();
 void measure();
-
 
 /* ---- TASK IMPLEMENTATION ---- */
 
@@ -23,9 +16,9 @@ extern void ExStartDriveTask(void const * argument) {
   /* Infinite loop */
   for(;;)
   {
-    osDelay(300);
+    osDelay(SENSOR_DELAY);
     measure();
-    osDelay(300);
+    osDelay(SENSOR_DELAY);
   }
   /* USER CODE END StartDriveTask */
 }

@@ -5,13 +5,17 @@
 #include "usart.h"
 #include <string.h>
 
-
+  extern bool isWhite[SENSOR_NUMBER];
+  extern int readings[SENSOR_NUMBER];
   extern UART_HandleTypeDef huart6;
+  bool test1, test2;
+
   char* data = "test";
   void ExStartCommTask(void const * argument){
   uint8_t buffer[8];
-  for(;;){
-    
+  for(;;) {
+    test1 = isWhite[0];
+    test2 = isWhite[1];
     HAL_UART_Transmit(&huart6, (uint8_t*) data, strlen(data), 250);
     HAL_UART_Receive(&huart6,buffer, sizeof(buffer),100);
     osDelay(1);

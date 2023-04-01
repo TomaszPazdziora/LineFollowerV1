@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccoNJ9nd.s 			page 1
-=======
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s 			page 1
->>>>>>> pr/2
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccKnuTUw.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -62,11 +58,7 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s 			page 1
   28:Core/Src/usart.c **** 
   29:Core/Src/usart.c **** /* USART6 init function */
   30:Core/Src/usart.c **** 
-<<<<<<< HEAD
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccoNJ9nd.s 			page 2
-=======
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s 			page 2
->>>>>>> pr/2
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccKnuTUw.s 			page 2
 
 
   31:Core/Src/usart.c **** void MX_USART6_UART_Init(void)
@@ -126,11 +118,7 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s 			page 1
   65              		.loc 1 48 28 is_stmt 0 view .LVU16
   66 001c C361     		str	r3, [r0, #28]
   49:Core/Src/usart.c ****   if (HAL_UART_Init(&huart6) != HAL_OK)
-<<<<<<< HEAD
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccoNJ9nd.s 			page 3
-=======
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s 			page 3
->>>>>>> pr/2
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccKnuTUw.s 			page 3
 
 
   67              		.loc 1 49 3 is_stmt 1 view .LVU17
@@ -190,12 +178,7 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s 			page 1
  111              	.LCFI2:
  112              		.cfi_def_cfa_offset 40
   61:Core/Src/usart.c **** 
-<<<<<<< HEAD
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccoNJ9nd.s 			page 4
-=======
-  62:Core/Src/usart.c ****   GPIO_InitTypeDef GPIO_InitStruct = {0};
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s 			page 4
->>>>>>> pr/2
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccKnuTUw.s 			page 4
 
 
   62:Core/Src/usart.c ****   GPIO_InitTypeDef GPIO_InitStruct = {0};
@@ -236,7 +219,6 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s 			page 1
   80:Core/Src/usart.c ****     GPIO_InitStruct.Alternate = GPIO_AF8_USART6;
   81:Core/Src/usart.c ****     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
   82:Core/Src/usart.c **** 
-<<<<<<< HEAD
   83:Core/Src/usart.c ****     /* USART6 interrupt Init */
   84:Core/Src/usart.c ****     HAL_NVIC_SetPriority(USART6_IRQn, 5, 0);
   85:Core/Src/usart.c ****     HAL_NVIC_EnableIRQ(USART6_IRQn);
@@ -256,30 +238,7 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s 			page 1
  138              	.L10:
  139              	.LCFI4:
  140              		.cfi_restore_state
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccoNJ9nd.s 			page 5
-=======
-  83:Core/Src/usart.c ****   /* USER CODE BEGIN USART6_MspInit 1 */
-  84:Core/Src/usart.c **** 
-  85:Core/Src/usart.c ****   /* USER CODE END USART6_MspInit 1 */
-  86:Core/Src/usart.c ****   }
-  87:Core/Src/usart.c **** }
- 129              		.loc 1 87 1 view .LVU30
- 130 0018 09B0     		add	sp, sp, #36
- 131              	.LCFI3:
- 132              		.cfi_remember_state
- 133              		.cfi_def_cfa_offset 4
- 134              		@ sp needed
- 135 001a 5DF804FB 		ldr	pc, [sp], #4
- 136              	.LVL4:
- 137              	.L10:
- 138              	.LCFI4:
- 139              		.cfi_restore_state
-  69:Core/Src/usart.c **** 
- 140              		.loc 1 69 5 is_stmt 1 view .LVU31
- 141              	.LBB2:
-  69:Core/Src/usart.c **** 
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s 			page 5
->>>>>>> pr/2
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccKnuTUw.s 			page 5
 
 
   69:Core/Src/usart.c **** 
@@ -337,19 +296,9 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s 			page 1
   77:Core/Src/usart.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
  179              		.loc 1 77 5 is_stmt 1 view .LVU45
   77:Core/Src/usart.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
-<<<<<<< HEAD
  180              		.loc 1 77 26 is_stmt 0 view .LVU46
  181 0050 0223     		movs	r3, #2
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccoNJ9nd.s 			page 6
-=======
- 179              		.loc 1 77 26 is_stmt 0 view .LVU46
- 180 0052 0223     		movs	r3, #2
- 181 0054 0493     		str	r3, [sp, #16]
-  78:Core/Src/usart.c ****     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
- 182              		.loc 1 78 5 is_stmt 1 view .LVU47
-  79:Core/Src/usart.c ****     GPIO_InitStruct.Alternate = GPIO_AF8_USART6;
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s 			page 6
->>>>>>> pr/2
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccKnuTUw.s 			page 6
 
 
  182 0052 0493     		str	r3, [sp, #16]
@@ -407,18 +356,9 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s 			page 1
  227              	.LVL9:
  228              	.LFB218:
   91:Core/Src/usart.c **** 
-<<<<<<< HEAD
   92:Core/Src/usart.c **** void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
   93:Core/Src/usart.c **** {
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccoNJ9nd.s 			page 7
-=======
-  92:Core/Src/usart.c ****   if(uartHandle->Instance==USART6)
- 228              		.loc 1 92 3 is_stmt 1 view .LVU57
- 229              		.loc 1 92 16 is_stmt 0 view .LVU58
- 230 0002 0268     		ldr	r2, [r0]
- 231              		.loc 1 92 5 view .LVU59
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s 			page 7
->>>>>>> pr/2
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccKnuTUw.s 			page 7
 
 
  229              		.loc 1 93 1 is_stmt 1 view -0
@@ -445,7 +385,6 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s 			page 1
   96:Core/Src/usart.c ****   {
   97:Core/Src/usart.c ****   /* USER CODE BEGIN USART6_MspDeInit 0 */
   98:Core/Src/usart.c **** 
-<<<<<<< HEAD
   99:Core/Src/usart.c ****   /* USER CODE END USART6_MspDeInit 0 */
  100:Core/Src/usart.c ****     /* Peripheral clock disable */
  101:Core/Src/usart.c ****     __HAL_RCC_USART6_CLK_DISABLE();
@@ -479,7 +418,7 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s 			page 1
  259 001a 0548     		ldr	r0, .L17+8
  260              	.LVL12:
  107:Core/Src/usart.c **** 
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccoNJ9nd.s 			page 8
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccKnuTUw.s 			page 8
 
 
  261              		.loc 1 107 5 is_stmt 0 view .LVU65
@@ -503,105 +442,41 @@ ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s 			page 1
  279              		.global	huart6
  280              		.section	.bss.huart6,"aw",%nobits
  281              		.align	2
- 284              	huart6:
- 285 0000 00000000 		.space	68
- 285      00000000 
- 285      00000000 
- 285      00000000 
- 285      00000000 
- 286              		.text
- 287              	.Letext0:
- 288              		.file 2 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h"
- 289              		.file 3 "c:\\program files\\arm-gnu-toolchain-12.2.mpacbti-rel1-mingw-w64-i686-arm-none-eabi\\arm-
- 290              		.file 4 "c:\\program files\\arm-gnu-toolchain-12.2.mpacbti-rel1-mingw-w64-i686-arm-none-eabi\\arm-
- 291              		.file 5 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
- 292              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
- 293              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
- 294              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h"
- 295              		.file 9 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h"
- 296              		.file 10 "Core/Inc/usart.h"
- 297              		.file 11 "Core/Inc/main.h"
-ARM GAS  C:\Users\Bgs\AppData\Local\Temp\ccoNJ9nd.s 			page 9
-=======
- 241              		.loc 1 98 5 is_stmt 1 view .LVU61
- 242 000c 064A     		ldr	r2, .L17+4
- 243 000e 536C     		ldr	r3, [r2, #68]
- 244 0010 23F02003 		bic	r3, r3, #32
- 245 0014 5364     		str	r3, [r2, #68]
- 104:Core/Src/usart.c **** 
- 246              		.loc 1 104 5 view .LVU62
- 247 0016 4FF4C051 		mov	r1, #6144
- 248 001a 0448     		ldr	r0, .L17+8
- 249              	.LVL10:
- 104:Core/Src/usart.c **** 
- 250              		.loc 1 104 5 is_stmt 0 view .LVU63
- 251 001c FFF7FEFF 		bl	HAL_GPIO_DeInit
- 252              	.LVL11:
- 253              		.loc 1 110 1 view .LVU64
- 254 0020 F3E7     		b	.L13
- 255              	.L18:
- 256 0022 00BF     		.align	2
- 257              	.L17:
- 258 0024 00140140 		.word	1073812480
- 259 0028 00380240 		.word	1073887232
- 260 002c 00000240 		.word	1073872896
- 261              		.cfi_endproc
- 262              	.LFE218:
- 264              		.global	huart6
- 265              		.section	.bss.huart6,"aw",%nobits
- 266              		.align	2
- 267              		.set	.LANCHOR0,. + 0
- 270              	huart6:
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s 			page 8
-
-
- 271 0000 00000000 		.space	68
- 271      00000000 
- 271      00000000 
- 271      00000000 
- 271      00000000 
- 272              		.text
- 273              	.Letext0:
- 274              		.file 2 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
- 275              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
- 276              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h"
- 277              		.file 5 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
- 278              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
- 279              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
- 280              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h"
- 281              		.file 9 "Core/Inc/main.h"
- 282              		.file 10 "Core/Inc/usart.h"
-ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s 			page 9
->>>>>>> pr/2
+ 282              		.set	.LANCHOR0,. + 0
+ 285              	huart6:
+ 286 0000 00000000 		.space	68
+ 286      00000000 
+ 286      00000000 
+ 286      00000000 
+ 286      00000000 
+ 287              		.text
+ 288              	.Letext0:
+ 289              		.file 2 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+ 290              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+ 291              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h"
+ 292              		.file 5 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
+ 293              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
+ 294              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
+ 295              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h"
+ 296              		.file 9 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h"
+ 297              		.file 10 "Core/Inc/main.h"
+ 298              		.file 11 "Core/Inc/usart.h"
+ARM GAS  C:\Users\tomek\AppData\Local\Temp\ccKnuTUw.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usart.c
-<<<<<<< HEAD
-C:\Users\Bgs\AppData\Local\Temp\ccoNJ9nd.s:21     .text.MX_USART6_UART_Init:00000000 $t
-C:\Users\Bgs\AppData\Local\Temp\ccoNJ9nd.s:27     .text.MX_USART6_UART_Init:00000000 MX_USART6_UART_Init
-C:\Users\Bgs\AppData\Local\Temp\ccoNJ9nd.s:85     .text.MX_USART6_UART_Init:0000002c $d
-C:\Users\Bgs\AppData\Local\Temp\ccoNJ9nd.s:284    .bss.huart6:00000000 huart6
-C:\Users\Bgs\AppData\Local\Temp\ccoNJ9nd.s:91     .text.HAL_UART_MspInit:00000000 $t
-C:\Users\Bgs\AppData\Local\Temp\ccoNJ9nd.s:97     .text.HAL_UART_MspInit:00000000 HAL_UART_MspInit
-C:\Users\Bgs\AppData\Local\Temp\ccoNJ9nd.s:214    .text.HAL_UART_MspInit:00000078 $d
-C:\Users\Bgs\AppData\Local\Temp\ccoNJ9nd.s:220    .text.HAL_UART_MspDeInit:00000000 $t
-C:\Users\Bgs\AppData\Local\Temp\ccoNJ9nd.s:226    .text.HAL_UART_MspDeInit:00000000 HAL_UART_MspDeInit
-C:\Users\Bgs\AppData\Local\Temp\ccoNJ9nd.s:273    .text.HAL_UART_MspDeInit:00000028 $d
-C:\Users\Bgs\AppData\Local\Temp\ccoNJ9nd.s:281    .bss.huart6:00000000 $d
-=======
-C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s:20     .text.MX_USART6_UART_Init:00000000 $t
-C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s:26     .text.MX_USART6_UART_Init:00000000 MX_USART6_UART_Init
-C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s:85     .text.MX_USART6_UART_Init:0000002c $d
-C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s:91     .text.HAL_UART_MspInit:00000000 $t
-C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s:97     .text.HAL_UART_MspInit:00000000 HAL_UART_MspInit
-C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s:203    .text.HAL_UART_MspInit:00000068 $d
-C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s:209    .text.HAL_UART_MspDeInit:00000000 $t
-C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s:215    .text.HAL_UART_MspDeInit:00000000 HAL_UART_MspDeInit
-C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s:258    .text.HAL_UART_MspDeInit:00000024 $d
-C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s:270    .bss.huart6:00000000 huart6
-C:\Users\tomek\AppData\Local\Temp\ccXGKOrf.s:266    .bss.huart6:00000000 $d
->>>>>>> pr/2
+C:\Users\tomek\AppData\Local\Temp\ccKnuTUw.s:20     .text.MX_USART6_UART_Init:00000000 $t
+C:\Users\tomek\AppData\Local\Temp\ccKnuTUw.s:26     .text.MX_USART6_UART_Init:00000000 MX_USART6_UART_Init
+C:\Users\tomek\AppData\Local\Temp\ccKnuTUw.s:85     .text.MX_USART6_UART_Init:0000002c $d
+C:\Users\tomek\AppData\Local\Temp\ccKnuTUw.s:91     .text.HAL_UART_MspInit:00000000 $t
+C:\Users\tomek\AppData\Local\Temp\ccKnuTUw.s:97     .text.HAL_UART_MspInit:00000000 HAL_UART_MspInit
+C:\Users\tomek\AppData\Local\Temp\ccKnuTUw.s:214    .text.HAL_UART_MspInit:00000078 $d
+C:\Users\tomek\AppData\Local\Temp\ccKnuTUw.s:220    .text.HAL_UART_MspDeInit:00000000 $t
+C:\Users\tomek\AppData\Local\Temp\ccKnuTUw.s:226    .text.HAL_UART_MspDeInit:00000000 HAL_UART_MspDeInit
+C:\Users\tomek\AppData\Local\Temp\ccKnuTUw.s:273    .text.HAL_UART_MspDeInit:00000028 $d
+C:\Users\tomek\AppData\Local\Temp\ccKnuTUw.s:285    .bss.huart6:00000000 huart6
+C:\Users\tomek\AppData\Local\Temp\ccKnuTUw.s:281    .bss.huart6:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_UART_Init
