@@ -16,27 +16,62 @@ void measure();
 int percentToDuty(int percent);
 void moveLeftMotor(int dir, int speedInPercent);
 void moveRightMotor(int dir, int speedInPercent);
+void moveMotors();
 
+
+/*--------- PD VARIABLES ----------*/
+
+#define MAX_SPEED 70
+bool isRunning = true;
+
+const float KP = 1;
+const float KD = 0.2;
+float PD = 0;
+
+// int weights[SENSOR_NUMBER] = {-20, -15, -10, -8, -5, -3, -1, 1, 3, 5, 8, 10, 15, 20};
+int weights[SENSOR_NUMBER] = {-30, 30};
+int speedDelay = 0;
+
+float error = 0;
+float prevError = 0;
+int average = 0;
+int sum = 0;
+int sensorsDetected = 0;
+
+int leftMotorSpeed = 0;
+int rightMotorSpeed = 0;
+
+void countPDvalues();
 /* ---- TASK IMPLEMENTATION ---- */
 
 extern void ExStartDriveTask(void const * argument) {
   /* USER CODE BEGIN StartDriveTask */
   /* Infinite loop */
+
+ 
+
   for(;;)
   {
-	// testing loops 
+    if (isRunning) {
+       measure(); 
+	   countPDvalues();
+	   moveMotors();
+	   osDelay(100);
+    }
+	
 
-	for(int i = 0; i <= 100; i++) {
-		moveLeftMotor(FORWARD, i);
-		moveRightMotor(BACKWARD, 100 - i);
-		osDelay(100);
-	}
 
-	for(int i = 0; i <= 100; i++) {
-		moveLeftMotor(FORWARD, 100 - i);
-		moveRightMotor(BACKWARD, i);
-		osDelay(100);
-	}
+	// for(int i = 0; i <= 100; i++) {
+	// 	moveLeftMotor(FORWARD, i);
+	// 	moveRightMotor(BACKWARD, 100 - i);
+	// 	osDelay(100);
+	// }
+
+	// for(int i = 0; i <= 100; i++) {
+	// 	moveLeftMotor(FORWARD, 100 - i);
+	// 	moveRightMotor(BACKWARD, i);
+	// 	osDelay(100);
+	// }
 	
 	// osDelay(SENSOR_DELAY);
     // measure();
@@ -81,6 +116,8 @@ int percentToDuty(int percent) {
 }
 
 void moveLeftMotor(int dir, int speedInPercent) {
+    TIM4->CCR1 = percentToDuty(speedInPercent);
+
 	if (dir == FORWARD) {
 		HAL_GPIO_WritePin(DRIVR1_GPIO_Port, DRIVR1_Pin, GPIO_PIN_RESET);
 		HAL_GPIO_WritePin(DRIVL1_GPIO_Port, DRIVL1_Pin, GPIO_PIN_SET);
@@ -89,10 +126,11 @@ void moveLeftMotor(int dir, int speedInPercent) {
 		HAL_GPIO_WritePin(DRIVR1_GPIO_Port, DRIVR1_Pin, GPIO_PIN_SET);
 		HAL_GPIO_WritePin(DRIVL1_GPIO_Port, DRIVL1_Pin, GPIO_PIN_RESET);
 	}
-	TIM4->CCR1 = percentToDuty(speedInPercent);
 }
 
 void moveRightMotor(int dir, int speedInPercent) {
+    TIM4->CCR2 = percentToDuty(speedInPercent);
+
 	if (dir == FORWARD) {
 		HAL_GPIO_WritePin(DRIVR2_GPIO_Port, DRIVR2_Pin, GPIO_PIN_RESET);
 		HAL_GPIO_WritePin(DRIVL2_GPIO_Port, DRIVL2_Pin, GPIO_PIN_SET);
@@ -101,5 +139,45 @@ void moveRightMotor(int dir, int speedInPercent) {
 		HAL_GPIO_WritePin(DRIVR2_GPIO_Port, DRIVR2_Pin, GPIO_PIN_SET);
 		HAL_GPIO_WritePin(DRIVL2_GPIO_Port, DRIVL2_Pin, GPIO_PIN_RESET);
 	}
-	TIM4->CCR2 = percentToDuty(speedInPercent);
+}
+
+void moveMotors() {
+	moveLeftMotor(FORWARD, leftMotorSpeed);
+	moveRightMotor(FORWARD, rightMotorSpeed);
+}
+
+
+
+/* ---- PD algorithm ---- */
+
+void countPDvalues() {
+	average = 0;
+	sum = 0;
+	speedDelay = 0;
+	sensorsDetected = 0;
+
+    for (int i = 0; i < SENSOR_NUMBER; i++) {
+		if (isWhite[i] == false) {
+			sum += weights[i];
+			sensorsDetected++;
+		}
+	}
+
+	average = sum/sensorsDetected;
+
+	prevError = error;
+	error = average;
+	speedDelay = (KP * error) + (KD * (error - prevError));
+
+	if (speedDelay > MAX_SPEED) speedDelay = MAX_SPEED;
+	if (speedDelay < -MAX_SPEED) speedDelay = -MAX_SPEED;
+
+	if (speedDelay < 0) {
+		rightMotorSpeed = MAX_SPEED;
+      	leftMotorSpeed = MAX_SPEED - speedDelay;
+	}
+	else {
+      	rightMotorSpeed = MAX_SPEED - speedDelay;
+      	leftMotorSpeed = MAX_SPEED;
+    }
 }
